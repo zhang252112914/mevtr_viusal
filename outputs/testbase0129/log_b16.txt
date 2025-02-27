@@ -1,0 +1,1469 @@
+2024-01-29 17:17:23,146:INFO: Effective parameters:
+2024-01-29 17:17:23,146:INFO:   <<< adaptive_cls: 0
+2024-01-29 17:17:23,146:INFO:   <<< aggregation: None
+2024-01-29 17:17:23,146:INFO:   <<< alpha: 1.0
+2024-01-29 17:17:23,146:INFO:   <<< batch_size: 2
+2024-01-29 17:17:23,146:INFO:   <<< batch_size_val: 16
+2024-01-29 17:17:23,146:INFO:   <<< cache_dir: 
+2024-01-29 17:17:23,146:INFO:   <<< cluser_embed_from_clip: 1
+2024-01-29 17:17:23,146:INFO:   <<< cluster_algo: kmediods++
+2024-01-29 17:17:23,146:INFO:   <<< cluster_distance: euclidean
+2024-01-29 17:17:23,146:INFO:   <<< cluster_embedding: 0
+2024-01-29 17:17:23,146:INFO:   <<< cluster_frame_embedding: 0
+2024-01-29 17:17:23,146:INFO:   <<< cluster_iter_limit: 100
+2024-01-29 17:17:23,146:INFO:   <<< cluster_threshold: 1e-05
+2024-01-29 17:17:23,146:INFO:   <<< coef_lr: 0.001
+2024-01-29 17:17:23,146:INFO:   <<< cross_model: cross-base
+2024-01-29 17:17:23,146:INFO:   <<< cross_num_hidden_layers: 4
+2024-01-29 17:17:23,147:INFO:   <<< data_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades
+2024-01-29 17:17:23,147:INFO:   <<< datatype: charades
+2024-01-29 17:17:23,147:INFO:   <<< do_eval: True
+2024-01-29 17:17:23,147:INFO:   <<< do_lower_case: False
+2024-01-29 17:17:23,147:INFO:   <<< do_pretrain: False
+2024-01-29 17:17:23,147:INFO:   <<< do_train: False
+2024-01-29 17:17:23,147:INFO:   <<< dynamic_alpha: False
+2024-01-29 17:17:23,147:INFO:   <<< epochs: 20
+2024-01-29 17:17:23,147:INFO:   <<< eval_frame_order: 0
+2024-01-29 17:17:23,147:INFO:   <<< expand_msrvtt_sentences: False
+2024-01-29 17:17:23,147:INFO:   <<< feature_framerate: 1
+2024-01-29 17:17:23,147:INFO:   <<< features_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades/Charades_v1_cp/
+2024-01-29 17:17:23,147:INFO:   <<< fp16: False
+2024-01-29 17:17:23,147:INFO:   <<< fp16_opt_level: O1
+2024-01-29 17:17:23,147:INFO:   <<< freeze_layer_num: 0
+2024-01-29 17:17:23,147:INFO:   <<< gradient_accumulation_steps: 1
+2024-01-29 17:17:23,147:INFO:   <<< hard_negative_rate: 0.5
+2024-01-29 17:17:23,147:INFO:   <<< init_model: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/checkpoints/pytorch_model.bin.4
+2024-01-29 17:17:23,147:INFO:   <<< linear_patch: 2d
+2024-01-29 17:17:23,147:INFO:   <<< local_rank: 0
+2024-01-29 17:17:23,147:INFO:   <<< loose_type: True
+2024-01-29 17:17:23,147:INFO:   <<< loss: balanced
+2024-01-29 17:17:23,147:INFO:   <<< lr: 0.0001
+2024-01-29 17:17:23,147:INFO:   <<< lr_decay: 0.9
+2024-01-29 17:17:23,147:INFO:   <<< margin: 0.1
+2024-01-29 17:17:23,147:INFO:   <<< max_frames: 64
+2024-01-29 17:17:23,147:INFO:   <<< max_words: 77
+2024-01-29 17:17:23,147:INFO:   <<< minkowski_norm_p: 2.0
+2024-01-29 17:17:23,147:INFO:   <<< n_display: 100
+2024-01-29 17:17:23,147:INFO:   <<< n_gpu: 1
+2024-01-29 17:17:23,147:INFO:   <<< n_pair: 1
+2024-01-29 17:17:23,147:INFO:   <<< negative_weighting: 1
+2024-01-29 17:17:23,147:INFO:   <<< num_thread_reader: 1
+2024-01-29 17:17:23,147:INFO:   <<< output_dir: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/outputs/testbase0129/
+2024-01-29 17:17:23,147:INFO:   <<< post_cluster_centroids: 16
+2024-01-29 17:17:23,147:INFO:   <<< post_process: cluster
+2024-01-29 17:17:23,147:INFO:   <<< pre_norm: 0
+2024-01-29 17:17:23,148:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-01-29 17:17:23,148:INFO:   <<< rank: 0
+2024-01-29 17:17:23,148:INFO:   <<< resume_model: None
+2024-01-29 17:17:23,148:INFO:   <<< sampled_use_mil: False
+2024-01-29 17:17:23,148:INFO:   <<< save_feature_path: None
+2024-01-29 17:17:23,148:INFO:   <<< seed: 42
+2024-01-29 17:17:23,148:INFO:   <<< sim_header: meanP
+2024-01-29 17:17:23,148:INFO:   <<< sim_lambda: 0.0
+2024-01-29 17:17:23,148:INFO:   <<< slice_framepos: 2
+2024-01-29 17:17:23,148:INFO:   <<< task_type: retrieval
+2024-01-29 17:17:23,148:INFO:   <<< temperature_new: 1.0
+2024-01-29 17:17:23,148:INFO:   <<< text_num_hidden_layers: 12
+2024-01-29 17:17:23,148:INFO:   <<< time_embedding: 0
+2024-01-29 17:17:23,148:INFO:   <<< train_csv: data/.train.csv
+2024-01-29 17:17:23,148:INFO:   <<< train_frame_order: 0
+2024-01-29 17:17:23,148:INFO:   <<< use_mil: False
+2024-01-29 17:17:23,148:INFO:   <<< val_csv: data/.val.csv
+2024-01-29 17:17:23,148:INFO:   <<< video_dim: 1024
+2024-01-29 17:17:23,148:INFO:   <<< visual_num_hidden_layers: 12
+2024-01-29 17:17:23,148:INFO:   <<< warmup_proportion: 0.1
+2024-01-29 17:17:23,148:INFO:   <<< world_size: 1
+2024-01-29 17:17:23,148:INFO: device: cuda:0 n_gpu: 1
+2024-01-29 17:17:23,663:INFO: loading archive file /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base
+2024-01-29 17:17:23,664:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-01-29 17:17:23,664:INFO: Weight doesn't exsits. /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base/cross_pytorch_model.bin
+2024-01-29 17:17:23,664:WARNING: Stage-One:True, Stage-Two:False
+2024-01-29 17:17:23,664:WARNING: Test retrieval by loose type.
+2024-01-29 17:17:23,664:WARNING: 	 embed_dim: 512
+2024-01-29 17:17:23,664:WARNING: 	 image_resolution: 224
+2024-01-29 17:17:23,664:WARNING: 	 vision_layers: 12
+2024-01-29 17:17:23,664:WARNING: 	 vision_width: 768
+2024-01-29 17:17:23,664:WARNING: 	 vision_patch_size: 32
+2024-01-29 17:17:23,664:WARNING: 	 context_length: 77
+2024-01-29 17:17:23,664:WARNING: 	 vocab_size: 49408
+2024-01-29 17:17:23,664:WARNING: 	 transformer_width: 512
+2024-01-29 17:17:23,664:WARNING: 	 transformer_heads: 8
+2024-01-29 17:17:23,664:WARNING: 	 transformer_layers: 12
+2024-01-29 17:17:23,664:WARNING: 		 linear_patch: 2d
+2024-01-29 17:17:23,664:WARNING: 	 cut_top_layer: 0
+2024-01-29 17:17:24,693:WARNING: 	 sim_header: meanP
+2024-01-29 17:17:27,254:INFO: --------------------
+2024-01-29 17:17:27,254:INFO: Weights from pretrained model not used in MeRetriever: 
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-01-29 17:17:28,810:INFO: ***** Running test *****
+2024-01-29 17:17:28,810:INFO:   Num examples = 1334
+2024-01-29 17:17:28,810:INFO:   Batch size = 16
+2024-01-29 17:17:28,810:INFO:   Num steps = 667
+2024-01-29 17:17:28,810:INFO: ***** Running val *****
+2024-01-29 17:17:28,810:INFO:   Num examples = 1334
+2024-01-29 17:17:28,812:INFO: model evaluation on 1 GPU
+2024-01-29 17:20:09,692:INFO: Effective parameters:
+2024-01-29 17:20:09,692:INFO:   <<< adaptive_cls: 0
+2024-01-29 17:20:09,692:INFO:   <<< aggregation: None
+2024-01-29 17:20:09,692:INFO:   <<< alpha: 1.0
+2024-01-29 17:20:09,692:INFO:   <<< batch_size: 2
+2024-01-29 17:20:09,692:INFO:   <<< batch_size_val: 16
+2024-01-29 17:20:09,692:INFO:   <<< cache_dir: 
+2024-01-29 17:20:09,692:INFO:   <<< cluser_embed_from_clip: 1
+2024-01-29 17:20:09,692:INFO:   <<< cluster_algo: kmediods++
+2024-01-29 17:20:09,692:INFO:   <<< cluster_distance: euclidean
+2024-01-29 17:20:09,692:INFO:   <<< cluster_embedding: 0
+2024-01-29 17:20:09,692:INFO:   <<< cluster_frame_embedding: 0
+2024-01-29 17:20:09,692:INFO:   <<< cluster_iter_limit: 100
+2024-01-29 17:20:09,692:INFO:   <<< cluster_threshold: 1e-05
+2024-01-29 17:20:09,692:INFO:   <<< coef_lr: 0.001
+2024-01-29 17:20:09,692:INFO:   <<< cross_model: cross-base
+2024-01-29 17:20:09,692:INFO:   <<< cross_num_hidden_layers: 4
+2024-01-29 17:20:09,692:INFO:   <<< data_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades
+2024-01-29 17:20:09,692:INFO:   <<< datatype: charades
+2024-01-29 17:20:09,692:INFO:   <<< do_eval: True
+2024-01-29 17:20:09,692:INFO:   <<< do_lower_case: False
+2024-01-29 17:20:09,692:INFO:   <<< do_pretrain: False
+2024-01-29 17:20:09,692:INFO:   <<< do_train: False
+2024-01-29 17:20:09,692:INFO:   <<< dynamic_alpha: False
+2024-01-29 17:20:09,692:INFO:   <<< epochs: 20
+2024-01-29 17:20:09,692:INFO:   <<< eval_frame_order: 0
+2024-01-29 17:20:09,692:INFO:   <<< expand_msrvtt_sentences: False
+2024-01-29 17:20:09,692:INFO:   <<< feature_framerate: 1
+2024-01-29 17:20:09,693:INFO:   <<< features_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades/Charades_v1_cp/
+2024-01-29 17:20:09,693:INFO:   <<< fp16: False
+2024-01-29 17:20:09,693:INFO:   <<< fp16_opt_level: O1
+2024-01-29 17:20:09,693:INFO:   <<< freeze_layer_num: 0
+2024-01-29 17:20:09,693:INFO:   <<< gradient_accumulation_steps: 1
+2024-01-29 17:20:09,693:INFO:   <<< hard_negative_rate: 0.5
+2024-01-29 17:20:09,693:INFO:   <<< init_model: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/checkpoints/pytorch_model.bin.4
+2024-01-29 17:20:09,693:INFO:   <<< linear_patch: 2d
+2024-01-29 17:20:09,693:INFO:   <<< local_rank: 0
+2024-01-29 17:20:09,693:INFO:   <<< loose_type: True
+2024-01-29 17:20:09,693:INFO:   <<< loss: balanced
+2024-01-29 17:20:09,693:INFO:   <<< lr: 0.0001
+2024-01-29 17:20:09,693:INFO:   <<< lr_decay: 0.9
+2024-01-29 17:20:09,693:INFO:   <<< margin: 0.1
+2024-01-29 17:20:09,693:INFO:   <<< max_frames: 64
+2024-01-29 17:20:09,693:INFO:   <<< max_words: 77
+2024-01-29 17:20:09,693:INFO:   <<< minkowski_norm_p: 2.0
+2024-01-29 17:20:09,693:INFO:   <<< n_display: 100
+2024-01-29 17:20:09,693:INFO:   <<< n_gpu: 1
+2024-01-29 17:20:09,693:INFO:   <<< n_pair: 1
+2024-01-29 17:20:09,693:INFO:   <<< negative_weighting: 1
+2024-01-29 17:20:09,693:INFO:   <<< num_thread_reader: 1
+2024-01-29 17:20:09,693:INFO:   <<< output_dir: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/outputs/testbase0129/
+2024-01-29 17:20:09,693:INFO:   <<< post_cluster_centroids: 16
+2024-01-29 17:20:09,693:INFO:   <<< post_process: cluster
+2024-01-29 17:20:09,693:INFO:   <<< pre_norm: 0
+2024-01-29 17:20:09,693:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-01-29 17:20:09,693:INFO:   <<< rank: 0
+2024-01-29 17:20:09,693:INFO:   <<< resume_model: None
+2024-01-29 17:20:09,693:INFO:   <<< sampled_use_mil: False
+2024-01-29 17:20:09,693:INFO:   <<< save_feature_path: None
+2024-01-29 17:20:09,693:INFO:   <<< seed: 42
+2024-01-29 17:20:09,693:INFO:   <<< sim_header: meanP
+2024-01-29 17:20:09,693:INFO:   <<< sim_lambda: 0.0
+2024-01-29 17:20:09,693:INFO:   <<< slice_framepos: 2
+2024-01-29 17:20:09,693:INFO:   <<< task_type: retrieval
+2024-01-29 17:20:09,693:INFO:   <<< temperature_new: 1.0
+2024-01-29 17:20:09,693:INFO:   <<< text_num_hidden_layers: 12
+2024-01-29 17:20:09,694:INFO:   <<< time_embedding: 0
+2024-01-29 17:20:09,694:INFO:   <<< train_csv: data/.train.csv
+2024-01-29 17:20:09,694:INFO:   <<< train_frame_order: 0
+2024-01-29 17:20:09,694:INFO:   <<< use_mil: False
+2024-01-29 17:20:09,694:INFO:   <<< val_csv: data/.val.csv
+2024-01-29 17:20:09,694:INFO:   <<< video_dim: 1024
+2024-01-29 17:20:09,694:INFO:   <<< visual_num_hidden_layers: 12
+2024-01-29 17:20:09,694:INFO:   <<< warmup_proportion: 0.1
+2024-01-29 17:20:09,694:INFO:   <<< world_size: 1
+2024-01-29 17:20:09,694:INFO: device: cuda:0 n_gpu: 1
+2024-01-29 17:20:10,215:INFO: loading archive file /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base
+2024-01-29 17:20:10,216:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-01-29 17:20:10,216:INFO: Weight doesn't exsits. /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base/cross_pytorch_model.bin
+2024-01-29 17:20:10,216:WARNING: Stage-One:True, Stage-Two:False
+2024-01-29 17:20:10,216:WARNING: Test retrieval by loose type.
+2024-01-29 17:20:10,216:WARNING: 	 embed_dim: 512
+2024-01-29 17:20:10,216:WARNING: 	 image_resolution: 224
+2024-01-29 17:20:10,216:WARNING: 	 vision_layers: 12
+2024-01-29 17:20:10,216:WARNING: 	 vision_width: 768
+2024-01-29 17:20:10,216:WARNING: 	 vision_patch_size: 32
+2024-01-29 17:20:10,216:WARNING: 	 context_length: 77
+2024-01-29 17:20:10,216:WARNING: 	 vocab_size: 49408
+2024-01-29 17:20:10,216:WARNING: 	 transformer_width: 512
+2024-01-29 17:20:10,216:WARNING: 	 transformer_heads: 8
+2024-01-29 17:20:10,216:WARNING: 	 transformer_layers: 12
+2024-01-29 17:20:10,216:WARNING: 		 linear_patch: 2d
+2024-01-29 17:20:10,216:WARNING: 	 cut_top_layer: 0
+2024-01-29 17:20:11,303:WARNING: 	 sim_header: meanP
+2024-01-29 17:20:13,934:INFO: --------------------
+2024-01-29 17:20:13,934:INFO: Weights from pretrained model not used in MeRetriever: 
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-01-29 17:20:15,501:INFO: ***** Running test *****
+2024-01-29 17:20:15,501:INFO:   Num examples = 1334
+2024-01-29 17:20:15,501:INFO:   Batch size = 16
+2024-01-29 17:20:15,501:INFO:   Num steps = 667
+2024-01-29 17:20:15,501:INFO: ***** Running val *****
+2024-01-29 17:20:15,501:INFO:   Num examples = 1334
+2024-01-29 17:20:15,502:INFO: model evaluation on 1 GPU
+2024-01-29 17:20:44,422:INFO: Effective parameters:
+2024-01-29 17:20:44,422:INFO:   <<< adaptive_cls: 0
+2024-01-29 17:20:44,422:INFO:   <<< aggregation: None
+2024-01-29 17:20:44,422:INFO:   <<< alpha: 1.0
+2024-01-29 17:20:44,423:INFO:   <<< batch_size: 2
+2024-01-29 17:20:44,423:INFO:   <<< batch_size_val: 16
+2024-01-29 17:20:44,423:INFO:   <<< cache_dir: 
+2024-01-29 17:20:44,423:INFO:   <<< cluser_embed_from_clip: 1
+2024-01-29 17:20:44,423:INFO:   <<< cluster_algo: kmediods++
+2024-01-29 17:20:44,423:INFO:   <<< cluster_distance: euclidean
+2024-01-29 17:20:44,423:INFO:   <<< cluster_embedding: 0
+2024-01-29 17:20:44,423:INFO:   <<< cluster_frame_embedding: 0
+2024-01-29 17:20:44,423:INFO:   <<< cluster_iter_limit: 100
+2024-01-29 17:20:44,423:INFO:   <<< cluster_threshold: 1e-05
+2024-01-29 17:20:44,423:INFO:   <<< coef_lr: 0.001
+2024-01-29 17:20:44,423:INFO:   <<< cross_model: cross-base
+2024-01-29 17:20:44,423:INFO:   <<< cross_num_hidden_layers: 4
+2024-01-29 17:20:44,423:INFO:   <<< data_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades
+2024-01-29 17:20:44,423:INFO:   <<< datatype: charades
+2024-01-29 17:20:44,423:INFO:   <<< do_eval: True
+2024-01-29 17:20:44,423:INFO:   <<< do_lower_case: False
+2024-01-29 17:20:44,423:INFO:   <<< do_pretrain: False
+2024-01-29 17:20:44,423:INFO:   <<< do_train: False
+2024-01-29 17:20:44,423:INFO:   <<< dynamic_alpha: False
+2024-01-29 17:20:44,423:INFO:   <<< epochs: 20
+2024-01-29 17:20:44,423:INFO:   <<< eval_frame_order: 0
+2024-01-29 17:20:44,423:INFO:   <<< expand_msrvtt_sentences: False
+2024-01-29 17:20:44,423:INFO:   <<< feature_framerate: 1
+2024-01-29 17:20:44,423:INFO:   <<< features_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades/Charades_v1/
+2024-01-29 17:20:44,423:INFO:   <<< fp16: False
+2024-01-29 17:20:44,423:INFO:   <<< fp16_opt_level: O1
+2024-01-29 17:20:44,423:INFO:   <<< freeze_layer_num: 0
+2024-01-29 17:20:44,423:INFO:   <<< gradient_accumulation_steps: 1
+2024-01-29 17:20:44,423:INFO:   <<< hard_negative_rate: 0.5
+2024-01-29 17:20:44,423:INFO:   <<< init_model: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/checkpoints/pytorch_model.bin.4
+2024-01-29 17:20:44,423:INFO:   <<< linear_patch: 2d
+2024-01-29 17:20:44,423:INFO:   <<< local_rank: 0
+2024-01-29 17:20:44,423:INFO:   <<< loose_type: True
+2024-01-29 17:20:44,423:INFO:   <<< loss: balanced
+2024-01-29 17:20:44,423:INFO:   <<< lr: 0.0001
+2024-01-29 17:20:44,424:INFO:   <<< lr_decay: 0.9
+2024-01-29 17:20:44,424:INFO:   <<< margin: 0.1
+2024-01-29 17:20:44,424:INFO:   <<< max_frames: 64
+2024-01-29 17:20:44,424:INFO:   <<< max_words: 77
+2024-01-29 17:20:44,424:INFO:   <<< minkowski_norm_p: 2.0
+2024-01-29 17:20:44,424:INFO:   <<< n_display: 100
+2024-01-29 17:20:44,424:INFO:   <<< n_gpu: 1
+2024-01-29 17:20:44,424:INFO:   <<< n_pair: 1
+2024-01-29 17:20:44,424:INFO:   <<< negative_weighting: 1
+2024-01-29 17:20:44,424:INFO:   <<< num_thread_reader: 1
+2024-01-29 17:20:44,424:INFO:   <<< output_dir: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/outputs/testbase0129/
+2024-01-29 17:20:44,424:INFO:   <<< post_cluster_centroids: 16
+2024-01-29 17:20:44,424:INFO:   <<< post_process: cluster
+2024-01-29 17:20:44,424:INFO:   <<< pre_norm: 0
+2024-01-29 17:20:44,424:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-01-29 17:20:44,424:INFO:   <<< rank: 0
+2024-01-29 17:20:44,424:INFO:   <<< resume_model: None
+2024-01-29 17:20:44,424:INFO:   <<< sampled_use_mil: False
+2024-01-29 17:20:44,424:INFO:   <<< save_feature_path: None
+2024-01-29 17:20:44,424:INFO:   <<< seed: 42
+2024-01-29 17:20:44,424:INFO:   <<< sim_header: meanP
+2024-01-29 17:20:44,424:INFO:   <<< sim_lambda: 0.0
+2024-01-29 17:20:44,424:INFO:   <<< slice_framepos: 2
+2024-01-29 17:20:44,424:INFO:   <<< task_type: retrieval
+2024-01-29 17:20:44,424:INFO:   <<< temperature_new: 1.0
+2024-01-29 17:20:44,424:INFO:   <<< text_num_hidden_layers: 12
+2024-01-29 17:20:44,424:INFO:   <<< time_embedding: 0
+2024-01-29 17:20:44,424:INFO:   <<< train_csv: data/.train.csv
+2024-01-29 17:20:44,424:INFO:   <<< train_frame_order: 0
+2024-01-29 17:20:44,424:INFO:   <<< use_mil: False
+2024-01-29 17:20:44,425:INFO:   <<< val_csv: data/.val.csv
+2024-01-29 17:20:44,425:INFO:   <<< video_dim: 1024
+2024-01-29 17:20:44,425:INFO:   <<< visual_num_hidden_layers: 12
+2024-01-29 17:20:44,425:INFO:   <<< warmup_proportion: 0.1
+2024-01-29 17:20:44,425:INFO:   <<< world_size: 1
+2024-01-29 17:20:44,425:INFO: device: cuda:0 n_gpu: 1
+2024-01-29 17:20:44,939:INFO: loading archive file /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base
+2024-01-29 17:20:44,939:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-01-29 17:20:44,939:INFO: Weight doesn't exsits. /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base/cross_pytorch_model.bin
+2024-01-29 17:20:44,939:WARNING: Stage-One:True, Stage-Two:False
+2024-01-29 17:20:44,939:WARNING: Test retrieval by loose type.
+2024-01-29 17:20:44,939:WARNING: 	 embed_dim: 512
+2024-01-29 17:20:44,939:WARNING: 	 image_resolution: 224
+2024-01-29 17:20:44,940:WARNING: 	 vision_layers: 12
+2024-01-29 17:20:44,940:WARNING: 	 vision_width: 768
+2024-01-29 17:20:44,940:WARNING: 	 vision_patch_size: 32
+2024-01-29 17:20:44,940:WARNING: 	 context_length: 77
+2024-01-29 17:20:44,940:WARNING: 	 vocab_size: 49408
+2024-01-29 17:20:44,940:WARNING: 	 transformer_width: 512
+2024-01-29 17:20:44,940:WARNING: 	 transformer_heads: 8
+2024-01-29 17:20:44,940:WARNING: 	 transformer_layers: 12
+2024-01-29 17:20:44,940:WARNING: 		 linear_patch: 2d
+2024-01-29 17:20:44,940:WARNING: 	 cut_top_layer: 0
+2024-01-29 17:20:45,994:WARNING: 	 sim_header: meanP
+2024-01-29 17:20:48,614:INFO: --------------------
+2024-01-29 17:20:48,614:INFO: Weights from pretrained model not used in MeRetriever: 
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-01-29 17:20:50,209:INFO: ***** Running test *****
+2024-01-29 17:20:50,209:INFO:   Num examples = 1334
+2024-01-29 17:20:50,209:INFO:   Batch size = 16
+2024-01-29 17:20:50,209:INFO:   Num steps = 667
+2024-01-29 17:20:50,209:INFO: ***** Running val *****
+2024-01-29 17:20:50,209:INFO:   Num examples = 1334
+2024-01-29 17:20:50,211:INFO: model evaluation on 1 GPU
+2024-01-29 17:24:14,584:INFO: Effective parameters:
+2024-01-29 17:24:14,584:INFO:   <<< adaptive_cls: 0
+2024-01-29 17:24:14,584:INFO:   <<< aggregation: None
+2024-01-29 17:24:14,584:INFO:   <<< alpha: 1.0
+2024-01-29 17:24:14,584:INFO:   <<< batch_size: 2
+2024-01-29 17:24:14,584:INFO:   <<< batch_size_val: 16
+2024-01-29 17:24:14,584:INFO:   <<< cache_dir: 
+2024-01-29 17:24:14,585:INFO:   <<< cluser_embed_from_clip: 1
+2024-01-29 17:24:14,585:INFO:   <<< cluster_algo: kmediods++
+2024-01-29 17:24:14,585:INFO:   <<< cluster_distance: euclidean
+2024-01-29 17:24:14,585:INFO:   <<< cluster_embedding: 0
+2024-01-29 17:24:14,585:INFO:   <<< cluster_frame_embedding: 0
+2024-01-29 17:24:14,585:INFO:   <<< cluster_iter_limit: 100
+2024-01-29 17:24:14,585:INFO:   <<< cluster_threshold: 1e-05
+2024-01-29 17:24:14,585:INFO:   <<< coef_lr: 0.001
+2024-01-29 17:24:14,585:INFO:   <<< cross_model: cross-base
+2024-01-29 17:24:14,585:INFO:   <<< cross_num_hidden_layers: 4
+2024-01-29 17:24:14,585:INFO:   <<< data_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades
+2024-01-29 17:24:14,585:INFO:   <<< datatype: charades
+2024-01-29 17:24:14,585:INFO:   <<< do_eval: True
+2024-01-29 17:24:14,585:INFO:   <<< do_lower_case: False
+2024-01-29 17:24:14,585:INFO:   <<< do_pretrain: False
+2024-01-29 17:24:14,585:INFO:   <<< do_train: False
+2024-01-29 17:24:14,585:INFO:   <<< dynamic_alpha: False
+2024-01-29 17:24:14,585:INFO:   <<< epochs: 20
+2024-01-29 17:24:14,585:INFO:   <<< eval_frame_order: 0
+2024-01-29 17:24:14,585:INFO:   <<< expand_msrvtt_sentences: False
+2024-01-29 17:24:14,585:INFO:   <<< feature_framerate: 1
+2024-01-29 17:24:14,585:INFO:   <<< features_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades/Charades_v1/
+2024-01-29 17:24:14,585:INFO:   <<< fp16: False
+2024-01-29 17:24:14,585:INFO:   <<< fp16_opt_level: O1
+2024-01-29 17:24:14,585:INFO:   <<< freeze_layer_num: 0
+2024-01-29 17:24:14,586:INFO:   <<< gradient_accumulation_steps: 1
+2024-01-29 17:24:14,586:INFO:   <<< hard_negative_rate: 0.5
+2024-01-29 17:24:14,586:INFO:   <<< init_model: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/checkpoints/pytorch_model.bin.4
+2024-01-29 17:24:14,586:INFO:   <<< linear_patch: 2d
+2024-01-29 17:24:14,586:INFO:   <<< local_rank: 0
+2024-01-29 17:24:14,586:INFO:   <<< loose_type: True
+2024-01-29 17:24:14,586:INFO:   <<< loss: balanced
+2024-01-29 17:24:14,586:INFO:   <<< lr: 0.0001
+2024-01-29 17:24:14,586:INFO:   <<< lr_decay: 0.9
+2024-01-29 17:24:14,586:INFO:   <<< margin: 0.1
+2024-01-29 17:24:14,586:INFO:   <<< max_frames: 64
+2024-01-29 17:24:14,586:INFO:   <<< max_words: 77
+2024-01-29 17:24:14,586:INFO:   <<< minkowski_norm_p: 2.0
+2024-01-29 17:24:14,586:INFO:   <<< n_display: 100
+2024-01-29 17:24:14,586:INFO:   <<< n_gpu: 1
+2024-01-29 17:24:14,586:INFO:   <<< n_pair: 1
+2024-01-29 17:24:14,586:INFO:   <<< negative_weighting: 1
+2024-01-29 17:24:14,586:INFO:   <<< num_thread_reader: 1
+2024-01-29 17:24:14,586:INFO:   <<< output_dir: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/outputs/testbase0129/
+2024-01-29 17:24:14,586:INFO:   <<< post_cluster_centroids: 16
+2024-01-29 17:24:14,586:INFO:   <<< post_process: cluster
+2024-01-29 17:24:14,586:INFO:   <<< pre_norm: 0
+2024-01-29 17:24:14,586:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-01-29 17:24:14,586:INFO:   <<< rank: 0
+2024-01-29 17:24:14,586:INFO:   <<< resume_model: None
+2024-01-29 17:24:14,586:INFO:   <<< sampled_use_mil: False
+2024-01-29 17:24:14,586:INFO:   <<< save_feature_path: None
+2024-01-29 17:24:14,586:INFO:   <<< seed: 42
+2024-01-29 17:24:14,586:INFO:   <<< sim_header: meanP
+2024-01-29 17:24:14,586:INFO:   <<< sim_lambda: 0.0
+2024-01-29 17:24:14,586:INFO:   <<< slice_framepos: 2
+2024-01-29 17:24:14,586:INFO:   <<< task_type: retrieval
+2024-01-29 17:24:14,586:INFO:   <<< temperature_new: 1.0
+2024-01-29 17:24:14,586:INFO:   <<< text_num_hidden_layers: 12
+2024-01-29 17:24:14,586:INFO:   <<< time_embedding: 0
+2024-01-29 17:24:14,586:INFO:   <<< train_csv: data/.train.csv
+2024-01-29 17:24:14,586:INFO:   <<< train_frame_order: 0
+2024-01-29 17:24:14,587:INFO:   <<< use_mil: False
+2024-01-29 17:24:14,587:INFO:   <<< val_csv: data/.val.csv
+2024-01-29 17:24:14,587:INFO:   <<< video_dim: 1024
+2024-01-29 17:24:14,587:INFO:   <<< visual_num_hidden_layers: 12
+2024-01-29 17:24:14,587:INFO:   <<< warmup_proportion: 0.1
+2024-01-29 17:24:14,587:INFO:   <<< world_size: 1
+2024-01-29 17:24:14,587:INFO: device: cuda:0 n_gpu: 1
+2024-01-29 17:24:15,102:INFO: loading archive file /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base
+2024-01-29 17:24:15,102:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-01-29 17:24:15,102:INFO: Weight doesn't exsits. /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base/cross_pytorch_model.bin
+2024-01-29 17:24:15,102:WARNING: Stage-One:True, Stage-Two:False
+2024-01-29 17:24:15,102:WARNING: Test retrieval by loose type.
+2024-01-29 17:24:15,102:WARNING: 	 embed_dim: 512
+2024-01-29 17:24:15,102:WARNING: 	 image_resolution: 224
+2024-01-29 17:24:15,102:WARNING: 	 vision_layers: 12
+2024-01-29 17:24:15,103:WARNING: 	 vision_width: 768
+2024-01-29 17:24:15,103:WARNING: 	 vision_patch_size: 32
+2024-01-29 17:24:15,103:WARNING: 	 context_length: 77
+2024-01-29 17:24:15,103:WARNING: 	 vocab_size: 49408
+2024-01-29 17:24:15,103:WARNING: 	 transformer_width: 512
+2024-01-29 17:24:15,103:WARNING: 	 transformer_heads: 8
+2024-01-29 17:24:15,103:WARNING: 	 transformer_layers: 12
+2024-01-29 17:24:15,103:WARNING: 		 linear_patch: 2d
+2024-01-29 17:24:15,103:WARNING: 	 cut_top_layer: 0
+2024-01-29 17:24:16,150:WARNING: 	 sim_header: meanP
+2024-01-29 17:24:18,753:INFO: --------------------
+2024-01-29 17:24:18,754:INFO: Weights from pretrained model not used in MeRetriever: 
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-01-29 17:24:20,337:INFO: ***** Running test *****
+2024-01-29 17:24:20,337:INFO:   Num examples = 1334
+2024-01-29 17:24:20,337:INFO:   Batch size = 16
+2024-01-29 17:24:20,337:INFO:   Num steps = 667
+2024-01-29 17:24:20,338:INFO: ***** Running val *****
+2024-01-29 17:24:20,338:INFO:   Num examples = 1334
+2024-01-29 17:24:20,339:INFO: model evaluation on 1 GPU
+2024-01-29 17:28:19,943:INFO: Effective parameters:
+2024-01-29 17:28:19,943:INFO:   <<< adaptive_cls: 0
+2024-01-29 17:28:19,943:INFO:   <<< aggregation: None
+2024-01-29 17:28:19,944:INFO:   <<< alpha: 1.0
+2024-01-29 17:28:19,944:INFO:   <<< batch_size: 64
+2024-01-29 17:28:19,944:INFO:   <<< batch_size_val: 16
+2024-01-29 17:28:19,944:INFO:   <<< cache_dir: 
+2024-01-29 17:28:19,944:INFO:   <<< cluser_embed_from_clip: 1
+2024-01-29 17:28:19,944:INFO:   <<< cluster_algo: kmediods++
+2024-01-29 17:28:19,944:INFO:   <<< cluster_distance: euclidean
+2024-01-29 17:28:19,944:INFO:   <<< cluster_embedding: 0
+2024-01-29 17:28:19,944:INFO:   <<< cluster_frame_embedding: 0
+2024-01-29 17:28:19,944:INFO:   <<< cluster_iter_limit: 100
+2024-01-29 17:28:19,944:INFO:   <<< cluster_threshold: 1e-05
+2024-01-29 17:28:19,944:INFO:   <<< coef_lr: 0.001
+2024-01-29 17:28:19,944:INFO:   <<< cross_model: cross-base
+2024-01-29 17:28:19,944:INFO:   <<< cross_num_hidden_layers: 4
+2024-01-29 17:28:19,944:INFO:   <<< data_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades
+2024-01-29 17:28:19,944:INFO:   <<< datatype: charades
+2024-01-29 17:28:19,944:INFO:   <<< do_eval: True
+2024-01-29 17:28:19,944:INFO:   <<< do_lower_case: False
+2024-01-29 17:28:19,944:INFO:   <<< do_pretrain: False
+2024-01-29 17:28:19,944:INFO:   <<< do_train: False
+2024-01-29 17:28:19,944:INFO:   <<< dynamic_alpha: False
+2024-01-29 17:28:19,944:INFO:   <<< epochs: 20
+2024-01-29 17:28:19,944:INFO:   <<< eval_frame_order: 0
+2024-01-29 17:28:19,944:INFO:   <<< expand_msrvtt_sentences: False
+2024-01-29 17:28:19,944:INFO:   <<< feature_framerate: 1
+2024-01-29 17:28:19,944:INFO:   <<< features_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades/Charades_v1/
+2024-01-29 17:28:19,944:INFO:   <<< fp16: False
+2024-01-29 17:28:19,944:INFO:   <<< fp16_opt_level: O1
+2024-01-29 17:28:19,944:INFO:   <<< freeze_layer_num: 0
+2024-01-29 17:28:19,944:INFO:   <<< gradient_accumulation_steps: 1
+2024-01-29 17:28:19,944:INFO:   <<< hard_negative_rate: 0.5
+2024-01-29 17:28:19,944:INFO:   <<< init_model: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/checkpoints/pytorch_model.bin.4
+2024-01-29 17:28:19,944:INFO:   <<< linear_patch: 2d
+2024-01-29 17:28:19,944:INFO:   <<< local_rank: 0
+2024-01-29 17:28:19,945:INFO:   <<< loose_type: True
+2024-01-29 17:28:19,945:INFO:   <<< loss: balanced
+2024-01-29 17:28:19,945:INFO:   <<< lr: 0.0001
+2024-01-29 17:28:19,945:INFO:   <<< lr_decay: 0.9
+2024-01-29 17:28:19,945:INFO:   <<< margin: 0.1
+2024-01-29 17:28:19,945:INFO:   <<< max_frames: 64
+2024-01-29 17:28:19,945:INFO:   <<< max_words: 77
+2024-01-29 17:28:19,945:INFO:   <<< minkowski_norm_p: 2.0
+2024-01-29 17:28:19,945:INFO:   <<< n_display: 100
+2024-01-29 17:28:19,945:INFO:   <<< n_gpu: 1
+2024-01-29 17:28:19,945:INFO:   <<< n_pair: 1
+2024-01-29 17:28:19,945:INFO:   <<< negative_weighting: 1
+2024-01-29 17:28:19,945:INFO:   <<< num_thread_reader: 1
+2024-01-29 17:28:19,945:INFO:   <<< output_dir: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/outputs/testbase0129/
+2024-01-29 17:28:19,945:INFO:   <<< post_cluster_centroids: 16
+2024-01-29 17:28:19,945:INFO:   <<< post_process: cluster
+2024-01-29 17:28:19,945:INFO:   <<< pre_norm: 0
+2024-01-29 17:28:19,945:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-01-29 17:28:19,945:INFO:   <<< rank: 0
+2024-01-29 17:28:19,945:INFO:   <<< resume_model: None
+2024-01-29 17:28:19,945:INFO:   <<< sampled_use_mil: False
+2024-01-29 17:28:19,945:INFO:   <<< save_feature_path: None
+2024-01-29 17:28:19,945:INFO:   <<< seed: 42
+2024-01-29 17:28:19,945:INFO:   <<< sim_header: meanP
+2024-01-29 17:28:19,945:INFO:   <<< sim_lambda: 0.0
+2024-01-29 17:28:19,945:INFO:   <<< slice_framepos: 2
+2024-01-29 17:28:19,945:INFO:   <<< task_type: retrieval
+2024-01-29 17:28:19,945:INFO:   <<< temperature_new: 1.0
+2024-01-29 17:28:19,945:INFO:   <<< text_num_hidden_layers: 12
+2024-01-29 17:28:19,945:INFO:   <<< time_embedding: 0
+2024-01-29 17:28:19,945:INFO:   <<< train_csv: data/.train.csv
+2024-01-29 17:28:19,945:INFO:   <<< train_frame_order: 0
+2024-01-29 17:28:19,945:INFO:   <<< use_mil: False
+2024-01-29 17:28:19,945:INFO:   <<< val_csv: data/.val.csv
+2024-01-29 17:28:19,945:INFO:   <<< video_dim: 1024
+2024-01-29 17:28:19,945:INFO:   <<< visual_num_hidden_layers: 12
+2024-01-29 17:28:19,945:INFO:   <<< warmup_proportion: 0.1
+2024-01-29 17:28:19,946:INFO:   <<< world_size: 1
+2024-01-29 17:28:19,946:INFO: device: cuda:0 n_gpu: 1
+2024-01-29 17:28:20,459:INFO: loading archive file /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base
+2024-01-29 17:28:20,460:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-01-29 17:28:20,460:INFO: Weight doesn't exsits. /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base/cross_pytorch_model.bin
+2024-01-29 17:28:20,460:WARNING: Stage-One:True, Stage-Two:False
+2024-01-29 17:28:20,460:WARNING: Test retrieval by loose type.
+2024-01-29 17:28:20,460:WARNING: 	 embed_dim: 512
+2024-01-29 17:28:20,460:WARNING: 	 image_resolution: 224
+2024-01-29 17:28:20,460:WARNING: 	 vision_layers: 12
+2024-01-29 17:28:20,460:WARNING: 	 vision_width: 768
+2024-01-29 17:28:20,460:WARNING: 	 vision_patch_size: 32
+2024-01-29 17:28:20,460:WARNING: 	 context_length: 77
+2024-01-29 17:28:20,460:WARNING: 	 vocab_size: 49408
+2024-01-29 17:28:20,460:WARNING: 	 transformer_width: 512
+2024-01-29 17:28:20,460:WARNING: 	 transformer_heads: 8
+2024-01-29 17:28:20,460:WARNING: 	 transformer_layers: 12
+2024-01-29 17:28:20,460:WARNING: 		 linear_patch: 2d
+2024-01-29 17:28:20,461:WARNING: 	 cut_top_layer: 0
+2024-01-29 17:28:21,506:WARNING: 	 sim_header: meanP
+2024-01-29 17:28:24,124:INFO: --------------------
+2024-01-29 17:28:24,124:INFO: Weights from pretrained model not used in MeRetriever: 
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-01-29 17:28:25,710:INFO: ***** Running test *****
+2024-01-29 17:28:25,710:INFO:   Num examples = 1334
+2024-01-29 17:28:25,710:INFO:   Batch size = 16
+2024-01-29 17:28:25,710:INFO:   Num steps = 21
+2024-01-29 17:28:25,710:INFO: ***** Running val *****
+2024-01-29 17:28:25,710:INFO:   Num examples = 1334
+2024-01-29 17:28:25,712:INFO: model evaluation on 1 GPU
+2024-01-29 17:41:44,890:INFO: Effective parameters:
+2024-01-29 17:41:44,890:INFO:   <<< adaptive_cls: 0
+2024-01-29 17:41:44,890:INFO:   <<< aggregation: None
+2024-01-29 17:41:44,890:INFO:   <<< alpha: 1.0
+2024-01-29 17:41:44,890:INFO:   <<< batch_size: 32
+2024-01-29 17:41:44,890:INFO:   <<< batch_size_val: 16
+2024-01-29 17:41:44,890:INFO:   <<< cache_dir: 
+2024-01-29 17:41:44,890:INFO:   <<< cluser_embed_from_clip: 1
+2024-01-29 17:41:44,890:INFO:   <<< cluster_algo: kmediods++
+2024-01-29 17:41:44,890:INFO:   <<< cluster_distance: euclidean
+2024-01-29 17:41:44,890:INFO:   <<< cluster_embedding: 0
+2024-01-29 17:41:44,890:INFO:   <<< cluster_frame_embedding: 0
+2024-01-29 17:41:44,890:INFO:   <<< cluster_iter_limit: 100
+2024-01-29 17:41:44,890:INFO:   <<< cluster_threshold: 1e-05
+2024-01-29 17:41:44,890:INFO:   <<< coef_lr: 0.001
+2024-01-29 17:41:44,890:INFO:   <<< cross_model: cross-base
+2024-01-29 17:41:44,891:INFO:   <<< cross_num_hidden_layers: 4
+2024-01-29 17:41:44,891:INFO:   <<< data_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades
+2024-01-29 17:41:44,891:INFO:   <<< datatype: charades
+2024-01-29 17:41:44,891:INFO:   <<< do_eval: True
+2024-01-29 17:41:44,891:INFO:   <<< do_lower_case: False
+2024-01-29 17:41:44,891:INFO:   <<< do_pretrain: False
+2024-01-29 17:41:44,891:INFO:   <<< do_train: False
+2024-01-29 17:41:44,891:INFO:   <<< dynamic_alpha: False
+2024-01-29 17:41:44,891:INFO:   <<< epochs: 20
+2024-01-29 17:41:44,891:INFO:   <<< eval_frame_order: 0
+2024-01-29 17:41:44,891:INFO:   <<< expand_msrvtt_sentences: False
+2024-01-29 17:41:44,891:INFO:   <<< feature_framerate: 1
+2024-01-29 17:41:44,891:INFO:   <<< features_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades/Charades_v1/
+2024-01-29 17:41:44,891:INFO:   <<< fp16: False
+2024-01-29 17:41:44,891:INFO:   <<< fp16_opt_level: O1
+2024-01-29 17:41:44,891:INFO:   <<< freeze_layer_num: 0
+2024-01-29 17:41:44,891:INFO:   <<< gradient_accumulation_steps: 1
+2024-01-29 17:41:44,891:INFO:   <<< hard_negative_rate: 0.5
+2024-01-29 17:41:44,891:INFO:   <<< init_model: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/checkpoints/pytorch_model.bin.4
+2024-01-29 17:41:44,891:INFO:   <<< linear_patch: 2d
+2024-01-29 17:41:44,891:INFO:   <<< local_rank: 0
+2024-01-29 17:41:44,891:INFO:   <<< loose_type: True
+2024-01-29 17:41:44,891:INFO:   <<< loss: balanced
+2024-01-29 17:41:44,891:INFO:   <<< lr: 0.0001
+2024-01-29 17:41:44,891:INFO:   <<< lr_decay: 0.9
+2024-01-29 17:41:44,891:INFO:   <<< margin: 0.1
+2024-01-29 17:41:44,891:INFO:   <<< max_frames: 64
+2024-01-29 17:41:44,891:INFO:   <<< max_words: 77
+2024-01-29 17:41:44,891:INFO:   <<< minkowski_norm_p: 2.0
+2024-01-29 17:41:44,891:INFO:   <<< n_display: 100
+2024-01-29 17:41:44,891:INFO:   <<< n_gpu: 1
+2024-01-29 17:41:44,892:INFO:   <<< n_pair: 1
+2024-01-29 17:41:44,892:INFO:   <<< negative_weighting: 1
+2024-01-29 17:41:44,892:INFO:   <<< num_thread_reader: 1
+2024-01-29 17:41:44,892:INFO:   <<< output_dir: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/outputs/testbase0129/
+2024-01-29 17:41:44,892:INFO:   <<< post_cluster_centroids: 16
+2024-01-29 17:41:44,892:INFO:   <<< post_process: cluster
+2024-01-29 17:41:44,892:INFO:   <<< pre_norm: 0
+2024-01-29 17:41:44,892:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-01-29 17:41:44,892:INFO:   <<< rank: 0
+2024-01-29 17:41:44,892:INFO:   <<< resume_model: None
+2024-01-29 17:41:44,892:INFO:   <<< sampled_use_mil: False
+2024-01-29 17:41:44,892:INFO:   <<< save_feature_path: None
+2024-01-29 17:41:44,892:INFO:   <<< seed: 42
+2024-01-29 17:41:44,892:INFO:   <<< sim_header: meanP
+2024-01-29 17:41:44,892:INFO:   <<< sim_lambda: 0.0
+2024-01-29 17:41:44,892:INFO:   <<< slice_framepos: 2
+2024-01-29 17:41:44,892:INFO:   <<< task_type: retrieval
+2024-01-29 17:41:44,892:INFO:   <<< temperature_new: 1.0
+2024-01-29 17:41:44,892:INFO:   <<< text_num_hidden_layers: 12
+2024-01-29 17:41:44,892:INFO:   <<< time_embedding: 0
+2024-01-29 17:41:44,892:INFO:   <<< train_csv: data/.train.csv
+2024-01-29 17:41:44,892:INFO:   <<< train_frame_order: 0
+2024-01-29 17:41:44,892:INFO:   <<< use_mil: False
+2024-01-29 17:41:44,892:INFO:   <<< val_csv: data/.val.csv
+2024-01-29 17:41:44,892:INFO:   <<< video_dim: 1024
+2024-01-29 17:41:44,892:INFO:   <<< visual_num_hidden_layers: 12
+2024-01-29 17:41:44,892:INFO:   <<< warmup_proportion: 0.1
+2024-01-29 17:41:44,892:INFO:   <<< world_size: 1
+2024-01-29 17:41:44,892:INFO: device: cuda:0 n_gpu: 1
+2024-01-29 17:41:45,403:INFO: loading archive file /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base
+2024-01-29 17:41:45,403:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-01-29 17:41:45,403:INFO: Weight doesn't exsits. /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base/cross_pytorch_model.bin
+2024-01-29 17:41:45,403:WARNING: Stage-One:True, Stage-Two:False
+2024-01-29 17:41:45,403:WARNING: Test retrieval by loose type.
+2024-01-29 17:41:45,403:WARNING: 	 embed_dim: 512
+2024-01-29 17:41:45,404:WARNING: 	 image_resolution: 224
+2024-01-29 17:41:45,404:WARNING: 	 vision_layers: 12
+2024-01-29 17:41:45,404:WARNING: 	 vision_width: 768
+2024-01-29 17:41:45,404:WARNING: 	 vision_patch_size: 32
+2024-01-29 17:41:45,404:WARNING: 	 context_length: 77
+2024-01-29 17:41:45,404:WARNING: 	 vocab_size: 49408
+2024-01-29 17:41:45,404:WARNING: 	 transformer_width: 512
+2024-01-29 17:41:45,404:WARNING: 	 transformer_heads: 8
+2024-01-29 17:41:45,404:WARNING: 	 transformer_layers: 12
+2024-01-29 17:41:45,404:WARNING: 		 linear_patch: 2d
+2024-01-29 17:41:45,404:WARNING: 	 cut_top_layer: 0
+2024-01-29 17:41:46,453:WARNING: 	 sim_header: meanP
+2024-01-29 17:41:49,084:INFO: --------------------
+2024-01-29 17:41:49,084:INFO: Weights from pretrained model not used in MeRetriever: 
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-01-29 17:41:50,696:INFO: ***** Running test *****
+2024-01-29 17:41:50,696:INFO:   Num examples = 1334
+2024-01-29 17:41:50,696:INFO:   Batch size = 16
+2024-01-29 17:41:50,696:INFO:   Num steps = 42
+2024-01-29 17:41:50,696:INFO: ***** Running val *****
+2024-01-29 17:41:50,696:INFO:   Num examples = 1334
+2024-01-29 17:41:50,697:INFO: model evaluation on 1 GPU
+2024-01-29 17:49:10,079:INFO: Effective parameters:
+2024-01-29 17:49:10,079:INFO:   <<< adaptive_cls: 0
+2024-01-29 17:49:10,079:INFO:   <<< aggregation: None
+2024-01-29 17:49:10,079:INFO:   <<< alpha: 1.0
+2024-01-29 17:49:10,079:INFO:   <<< batch_size: 256
+2024-01-29 17:49:10,079:INFO:   <<< batch_size_val: 16
+2024-01-29 17:49:10,079:INFO:   <<< cache_dir: 
+2024-01-29 17:49:10,079:INFO:   <<< cluser_embed_from_clip: 1
+2024-01-29 17:49:10,079:INFO:   <<< cluster_algo: kmediods++
+2024-01-29 17:49:10,079:INFO:   <<< cluster_distance: euclidean
+2024-01-29 17:49:10,079:INFO:   <<< cluster_embedding: 0
+2024-01-29 17:49:10,079:INFO:   <<< cluster_frame_embedding: 0
+2024-01-29 17:49:10,079:INFO:   <<< cluster_iter_limit: 100
+2024-01-29 17:49:10,079:INFO:   <<< cluster_threshold: 1e-05
+2024-01-29 17:49:10,079:INFO:   <<< coef_lr: 0.001
+2024-01-29 17:49:10,079:INFO:   <<< cross_model: cross-base
+2024-01-29 17:49:10,079:INFO:   <<< cross_num_hidden_layers: 4
+2024-01-29 17:49:10,079:INFO:   <<< data_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades
+2024-01-29 17:49:10,079:INFO:   <<< datatype: charades
+2024-01-29 17:49:10,079:INFO:   <<< do_eval: True
+2024-01-29 17:49:10,079:INFO:   <<< do_lower_case: False
+2024-01-29 17:49:10,079:INFO:   <<< do_pretrain: False
+2024-01-29 17:49:10,079:INFO:   <<< do_train: False
+2024-01-29 17:49:10,080:INFO:   <<< dynamic_alpha: False
+2024-01-29 17:49:10,080:INFO:   <<< epochs: 20
+2024-01-29 17:49:10,080:INFO:   <<< eval_frame_order: 0
+2024-01-29 17:49:10,080:INFO:   <<< expand_msrvtt_sentences: False
+2024-01-29 17:49:10,080:INFO:   <<< feature_framerate: 1
+2024-01-29 17:49:10,080:INFO:   <<< features_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades/Charades_v1_cp/
+2024-01-29 17:49:10,080:INFO:   <<< fp16: False
+2024-01-29 17:49:10,080:INFO:   <<< fp16_opt_level: O1
+2024-01-29 17:49:10,080:INFO:   <<< freeze_layer_num: 0
+2024-01-29 17:49:10,080:INFO:   <<< gradient_accumulation_steps: 1
+2024-01-29 17:49:10,080:INFO:   <<< hard_negative_rate: 0.5
+2024-01-29 17:49:10,080:INFO:   <<< init_model: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/checkpoints/pytorch_model.bin.4
+2024-01-29 17:49:10,080:INFO:   <<< linear_patch: 2d
+2024-01-29 17:49:10,080:INFO:   <<< local_rank: 0
+2024-01-29 17:49:10,080:INFO:   <<< loose_type: True
+2024-01-29 17:49:10,080:INFO:   <<< loss: balanced
+2024-01-29 17:49:10,080:INFO:   <<< lr: 0.0001
+2024-01-29 17:49:10,080:INFO:   <<< lr_decay: 0.9
+2024-01-29 17:49:10,080:INFO:   <<< margin: 0.1
+2024-01-29 17:49:10,080:INFO:   <<< max_frames: 64
+2024-01-29 17:49:10,080:INFO:   <<< max_words: 77
+2024-01-29 17:49:10,080:INFO:   <<< minkowski_norm_p: 2.0
+2024-01-29 17:49:10,080:INFO:   <<< n_display: 100
+2024-01-29 17:49:10,080:INFO:   <<< n_gpu: 1
+2024-01-29 17:49:10,080:INFO:   <<< n_pair: 1
+2024-01-29 17:49:10,080:INFO:   <<< negative_weighting: 1
+2024-01-29 17:49:10,080:INFO:   <<< num_thread_reader: 1
+2024-01-29 17:49:10,080:INFO:   <<< output_dir: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/outputs/testbase0129/
+2024-01-29 17:49:10,080:INFO:   <<< post_cluster_centroids: 16
+2024-01-29 17:49:10,080:INFO:   <<< post_process: cluster
+2024-01-29 17:49:10,080:INFO:   <<< pre_norm: 0
+2024-01-29 17:49:10,080:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-01-29 17:49:10,080:INFO:   <<< rank: 0
+2024-01-29 17:49:10,081:INFO:   <<< resume_model: None
+2024-01-29 17:49:10,081:INFO:   <<< sampled_use_mil: False
+2024-01-29 17:49:10,081:INFO:   <<< save_feature_path: None
+2024-01-29 17:49:10,081:INFO:   <<< seed: 42
+2024-01-29 17:49:10,081:INFO:   <<< sim_header: meanP
+2024-01-29 17:49:10,081:INFO:   <<< sim_lambda: 0.0
+2024-01-29 17:49:10,081:INFO:   <<< slice_framepos: 2
+2024-01-29 17:49:10,081:INFO:   <<< task_type: retrieval
+2024-01-29 17:49:10,081:INFO:   <<< temperature_new: 1.0
+2024-01-29 17:49:10,081:INFO:   <<< text_num_hidden_layers: 12
+2024-01-29 17:49:10,081:INFO:   <<< time_embedding: 0
+2024-01-29 17:49:10,081:INFO:   <<< train_csv: data/.train.csv
+2024-01-29 17:49:10,081:INFO:   <<< train_frame_order: 0
+2024-01-29 17:49:10,081:INFO:   <<< use_mil: False
+2024-01-29 17:49:10,081:INFO:   <<< val_csv: data/.val.csv
+2024-01-29 17:49:10,081:INFO:   <<< video_dim: 1024
+2024-01-29 17:49:10,081:INFO:   <<< visual_num_hidden_layers: 12
+2024-01-29 17:49:10,081:INFO:   <<< warmup_proportion: 0.1
+2024-01-29 17:49:10,081:INFO:   <<< world_size: 1
+2024-01-29 17:49:10,081:INFO: device: cuda:0 n_gpu: 1
+2024-01-29 17:49:10,593:INFO: loading archive file /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base
+2024-01-29 17:49:10,593:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-01-29 17:49:10,593:INFO: Weight doesn't exsits. /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base/cross_pytorch_model.bin
+2024-01-29 17:49:10,593:WARNING: Stage-One:True, Stage-Two:False
+2024-01-29 17:49:10,593:WARNING: Test retrieval by loose type.
+2024-01-29 17:49:10,594:WARNING: 	 embed_dim: 512
+2024-01-29 17:49:10,594:WARNING: 	 image_resolution: 224
+2024-01-29 17:49:10,594:WARNING: 	 vision_layers: 12
+2024-01-29 17:49:10,594:WARNING: 	 vision_width: 768
+2024-01-29 17:49:10,594:WARNING: 	 vision_patch_size: 32
+2024-01-29 17:49:10,594:WARNING: 	 context_length: 77
+2024-01-29 17:49:10,594:WARNING: 	 vocab_size: 49408
+2024-01-29 17:49:10,594:WARNING: 	 transformer_width: 512
+2024-01-29 17:49:10,594:WARNING: 	 transformer_heads: 8
+2024-01-29 17:49:10,594:WARNING: 	 transformer_layers: 12
+2024-01-29 17:49:10,594:WARNING: 		 linear_patch: 2d
+2024-01-29 17:49:10,594:WARNING: 	 cut_top_layer: 0
+2024-01-29 17:49:11,670:WARNING: 	 sim_header: meanP
+2024-01-29 17:49:14,304:INFO: --------------------
+2024-01-29 17:49:14,304:INFO: Weights from pretrained model not used in MeRetriever: 
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-01-29 17:49:15,892:INFO: ***** Running test *****
+2024-01-29 17:49:15,892:INFO:   Num examples = 1334
+2024-01-29 17:49:15,892:INFO:   Batch size = 16
+2024-01-29 17:49:15,893:INFO:   Num steps = 6
+2024-01-29 17:49:15,893:INFO: ***** Running val *****
+2024-01-29 17:49:15,893:INFO:   Num examples = 1334
+2024-01-29 17:49:15,894:INFO: model evaluation on 1 GPU
+2024-01-29 17:50:26,649:INFO: Effective parameters:
+2024-01-29 17:50:26,650:INFO:   <<< adaptive_cls: 0
+2024-01-29 17:50:26,650:INFO:   <<< aggregation: None
+2024-01-29 17:50:26,650:INFO:   <<< alpha: 1.0
+2024-01-29 17:50:26,650:INFO:   <<< batch_size: 128
+2024-01-29 17:50:26,650:INFO:   <<< batch_size_val: 16
+2024-01-29 17:50:26,650:INFO:   <<< cache_dir: 
+2024-01-29 17:50:26,650:INFO:   <<< cluser_embed_from_clip: 1
+2024-01-29 17:50:26,650:INFO:   <<< cluster_algo: kmediods++
+2024-01-29 17:50:26,650:INFO:   <<< cluster_distance: euclidean
+2024-01-29 17:50:26,650:INFO:   <<< cluster_embedding: 0
+2024-01-29 17:50:26,650:INFO:   <<< cluster_frame_embedding: 0
+2024-01-29 17:50:26,650:INFO:   <<< cluster_iter_limit: 100
+2024-01-29 17:50:26,650:INFO:   <<< cluster_threshold: 1e-05
+2024-01-29 17:50:26,650:INFO:   <<< coef_lr: 0.001
+2024-01-29 17:50:26,650:INFO:   <<< cross_model: cross-base
+2024-01-29 17:50:26,650:INFO:   <<< cross_num_hidden_layers: 4
+2024-01-29 17:50:26,650:INFO:   <<< data_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades
+2024-01-29 17:50:26,650:INFO:   <<< datatype: charades
+2024-01-29 17:50:26,650:INFO:   <<< do_eval: True
+2024-01-29 17:50:26,650:INFO:   <<< do_lower_case: False
+2024-01-29 17:50:26,650:INFO:   <<< do_pretrain: False
+2024-01-29 17:50:26,650:INFO:   <<< do_train: False
+2024-01-29 17:50:26,650:INFO:   <<< dynamic_alpha: False
+2024-01-29 17:50:26,650:INFO:   <<< epochs: 20
+2024-01-29 17:50:26,650:INFO:   <<< eval_frame_order: 0
+2024-01-29 17:50:26,650:INFO:   <<< expand_msrvtt_sentences: False
+2024-01-29 17:50:26,650:INFO:   <<< feature_framerate: 1
+2024-01-29 17:50:26,650:INFO:   <<< features_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades/Charades_v1_cp/
+2024-01-29 17:50:26,650:INFO:   <<< fp16: False
+2024-01-29 17:50:26,650:INFO:   <<< fp16_opt_level: O1
+2024-01-29 17:50:26,650:INFO:   <<< freeze_layer_num: 0
+2024-01-29 17:50:26,650:INFO:   <<< gradient_accumulation_steps: 1
+2024-01-29 17:50:26,650:INFO:   <<< hard_negative_rate: 0.5
+2024-01-29 17:50:26,650:INFO:   <<< init_model: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/checkpoints/pytorch_model.bin.4
+2024-01-29 17:50:26,651:INFO:   <<< linear_patch: 2d
+2024-01-29 17:50:26,651:INFO:   <<< local_rank: 0
+2024-01-29 17:50:26,651:INFO:   <<< loose_type: True
+2024-01-29 17:50:26,651:INFO:   <<< loss: balanced
+2024-01-29 17:50:26,651:INFO:   <<< lr: 0.0001
+2024-01-29 17:50:26,651:INFO:   <<< lr_decay: 0.9
+2024-01-29 17:50:26,651:INFO:   <<< margin: 0.1
+2024-01-29 17:50:26,651:INFO:   <<< max_frames: 64
+2024-01-29 17:50:26,651:INFO:   <<< max_words: 77
+2024-01-29 17:50:26,651:INFO:   <<< minkowski_norm_p: 2.0
+2024-01-29 17:50:26,651:INFO:   <<< n_display: 100
+2024-01-29 17:50:26,651:INFO:   <<< n_gpu: 1
+2024-01-29 17:50:26,651:INFO:   <<< n_pair: 1
+2024-01-29 17:50:26,651:INFO:   <<< negative_weighting: 1
+2024-01-29 17:50:26,651:INFO:   <<< num_thread_reader: 1
+2024-01-29 17:50:26,651:INFO:   <<< output_dir: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/outputs/testbase0129/
+2024-01-29 17:50:26,651:INFO:   <<< post_cluster_centroids: 16
+2024-01-29 17:50:26,651:INFO:   <<< post_process: cluster
+2024-01-29 17:50:26,651:INFO:   <<< pre_norm: 0
+2024-01-29 17:50:26,651:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-01-29 17:50:26,651:INFO:   <<< rank: 0
+2024-01-29 17:50:26,651:INFO:   <<< resume_model: None
+2024-01-29 17:50:26,651:INFO:   <<< sampled_use_mil: False
+2024-01-29 17:50:26,651:INFO:   <<< save_feature_path: None
+2024-01-29 17:50:26,651:INFO:   <<< seed: 42
+2024-01-29 17:50:26,651:INFO:   <<< sim_header: meanP
+2024-01-29 17:50:26,651:INFO:   <<< sim_lambda: 0.0
+2024-01-29 17:50:26,651:INFO:   <<< slice_framepos: 2
+2024-01-29 17:50:26,651:INFO:   <<< task_type: retrieval
+2024-01-29 17:50:26,651:INFO:   <<< temperature_new: 1.0
+2024-01-29 17:50:26,651:INFO:   <<< text_num_hidden_layers: 12
+2024-01-29 17:50:26,651:INFO:   <<< time_embedding: 0
+2024-01-29 17:50:26,652:INFO:   <<< train_csv: data/.train.csv
+2024-01-29 17:50:26,652:INFO:   <<< train_frame_order: 0
+2024-01-29 17:50:26,652:INFO:   <<< use_mil: False
+2024-01-29 17:50:26,652:INFO:   <<< val_csv: data/.val.csv
+2024-01-29 17:50:26,652:INFO:   <<< video_dim: 1024
+2024-01-29 17:50:26,652:INFO:   <<< visual_num_hidden_layers: 12
+2024-01-29 17:50:26,652:INFO:   <<< warmup_proportion: 0.1
+2024-01-29 17:50:26,652:INFO:   <<< world_size: 1
+2024-01-29 17:50:26,652:INFO: device: cuda:0 n_gpu: 1
+2024-01-29 17:50:27,175:INFO: loading archive file /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base
+2024-01-29 17:50:27,175:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-01-29 17:50:27,175:INFO: Weight doesn't exsits. /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base/cross_pytorch_model.bin
+2024-01-29 17:50:27,175:WARNING: Stage-One:True, Stage-Two:False
+2024-01-29 17:50:27,175:WARNING: Test retrieval by loose type.
+2024-01-29 17:50:27,175:WARNING: 	 embed_dim: 512
+2024-01-29 17:50:27,175:WARNING: 	 image_resolution: 224
+2024-01-29 17:50:27,175:WARNING: 	 vision_layers: 12
+2024-01-29 17:50:27,175:WARNING: 	 vision_width: 768
+2024-01-29 17:50:27,176:WARNING: 	 vision_patch_size: 32
+2024-01-29 17:50:27,176:WARNING: 	 context_length: 77
+2024-01-29 17:50:27,176:WARNING: 	 vocab_size: 49408
+2024-01-29 17:50:27,176:WARNING: 	 transformer_width: 512
+2024-01-29 17:50:27,176:WARNING: 	 transformer_heads: 8
+2024-01-29 17:50:27,176:WARNING: 	 transformer_layers: 12
+2024-01-29 17:50:27,176:WARNING: 		 linear_patch: 2d
+2024-01-29 17:50:27,176:WARNING: 	 cut_top_layer: 0
+2024-01-29 17:50:28,231:WARNING: 	 sim_header: meanP
+2024-01-29 17:50:30,828:INFO: --------------------
+2024-01-29 17:50:30,828:INFO: Weights from pretrained model not used in MeRetriever: 
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-01-29 17:50:32,417:INFO: ***** Running test *****
+2024-01-29 17:50:32,417:INFO:   Num examples = 1334
+2024-01-29 17:50:32,417:INFO:   Batch size = 16
+2024-01-29 17:50:32,417:INFO:   Num steps = 11
+2024-01-29 17:50:32,417:INFO: ***** Running val *****
+2024-01-29 17:50:32,417:INFO:   Num examples = 1334
+2024-01-29 17:50:32,419:INFO: model evaluation on 1 GPU
+2024-01-29 17:50:39,880:INFO: Effective parameters:
+2024-01-29 17:50:39,880:INFO:   <<< adaptive_cls: 0
+2024-01-29 17:50:39,880:INFO:   <<< aggregation: None
+2024-01-29 17:50:39,880:INFO:   <<< alpha: 1.0
+2024-01-29 17:50:39,880:INFO:   <<< batch_size: 128
+2024-01-29 17:50:39,880:INFO:   <<< batch_size_val: 16
+2024-01-29 17:50:39,880:INFO:   <<< cache_dir: 
+2024-01-29 17:50:39,880:INFO:   <<< cluser_embed_from_clip: 1
+2024-01-29 17:50:39,880:INFO:   <<< cluster_algo: kmediods++
+2024-01-29 17:50:39,880:INFO:   <<< cluster_distance: euclidean
+2024-01-29 17:50:39,880:INFO:   <<< cluster_embedding: 0
+2024-01-29 17:50:39,880:INFO:   <<< cluster_frame_embedding: 0
+2024-01-29 17:50:39,880:INFO:   <<< cluster_iter_limit: 100
+2024-01-29 17:50:39,880:INFO:   <<< cluster_threshold: 1e-05
+2024-01-29 17:50:39,880:INFO:   <<< coef_lr: 0.001
+2024-01-29 17:50:39,880:INFO:   <<< cross_model: cross-base
+2024-01-29 17:50:39,880:INFO:   <<< cross_num_hidden_layers: 4
+2024-01-29 17:50:39,880:INFO:   <<< data_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades
+2024-01-29 17:50:39,880:INFO:   <<< datatype: charades
+2024-01-29 17:50:39,881:INFO:   <<< do_eval: True
+2024-01-29 17:50:39,881:INFO:   <<< do_lower_case: False
+2024-01-29 17:50:39,881:INFO:   <<< do_pretrain: False
+2024-01-29 17:50:39,881:INFO:   <<< do_train: False
+2024-01-29 17:50:39,881:INFO:   <<< dynamic_alpha: False
+2024-01-29 17:50:39,881:INFO:   <<< epochs: 20
+2024-01-29 17:50:39,881:INFO:   <<< eval_frame_order: 0
+2024-01-29 17:50:39,881:INFO:   <<< expand_msrvtt_sentences: False
+2024-01-29 17:50:39,881:INFO:   <<< feature_framerate: 1
+2024-01-29 17:50:39,881:INFO:   <<< features_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades/Charades_v1_cp/
+2024-01-29 17:50:39,881:INFO:   <<< fp16: False
+2024-01-29 17:50:39,881:INFO:   <<< fp16_opt_level: O1
+2024-01-29 17:50:39,881:INFO:   <<< freeze_layer_num: 0
+2024-01-29 17:50:39,881:INFO:   <<< gradient_accumulation_steps: 1
+2024-01-29 17:50:39,881:INFO:   <<< hard_negative_rate: 0.5
+2024-01-29 17:50:39,881:INFO:   <<< init_model: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/checkpoints/pytorch_model.bin.4
+2024-01-29 17:50:39,881:INFO:   <<< linear_patch: 2d
+2024-01-29 17:50:39,881:INFO:   <<< local_rank: 0
+2024-01-29 17:50:39,881:INFO:   <<< loose_type: True
+2024-01-29 17:50:39,881:INFO:   <<< loss: balanced
+2024-01-29 17:50:39,881:INFO:   <<< lr: 0.0001
+2024-01-29 17:50:39,881:INFO:   <<< lr_decay: 0.9
+2024-01-29 17:50:39,881:INFO:   <<< margin: 0.1
+2024-01-29 17:50:39,881:INFO:   <<< max_frames: 64
+2024-01-29 17:50:39,881:INFO:   <<< max_words: 77
+2024-01-29 17:50:39,881:INFO:   <<< minkowski_norm_p: 2.0
+2024-01-29 17:50:39,881:INFO:   <<< n_display: 100
+2024-01-29 17:50:39,881:INFO:   <<< n_gpu: 1
+2024-01-29 17:50:39,881:INFO:   <<< n_pair: 1
+2024-01-29 17:50:39,881:INFO:   <<< negative_weighting: 1
+2024-01-29 17:50:39,882:INFO:   <<< num_thread_reader: 8
+2024-01-29 17:50:39,882:INFO:   <<< output_dir: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/outputs/testbase0129/
+2024-01-29 17:50:39,882:INFO:   <<< post_cluster_centroids: 16
+2024-01-29 17:50:39,882:INFO:   <<< post_process: cluster
+2024-01-29 17:50:39,882:INFO:   <<< pre_norm: 0
+2024-01-29 17:50:39,882:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-01-29 17:50:39,882:INFO:   <<< rank: 0
+2024-01-29 17:50:39,882:INFO:   <<< resume_model: None
+2024-01-29 17:50:39,882:INFO:   <<< sampled_use_mil: False
+2024-01-29 17:50:39,882:INFO:   <<< save_feature_path: None
+2024-01-29 17:50:39,882:INFO:   <<< seed: 42
+2024-01-29 17:50:39,882:INFO:   <<< sim_header: meanP
+2024-01-29 17:50:39,882:INFO:   <<< sim_lambda: 0.0
+2024-01-29 17:50:39,882:INFO:   <<< slice_framepos: 2
+2024-01-29 17:50:39,882:INFO:   <<< task_type: retrieval
+2024-01-29 17:50:39,882:INFO:   <<< temperature_new: 1.0
+2024-01-29 17:50:39,882:INFO:   <<< text_num_hidden_layers: 12
+2024-01-29 17:50:39,882:INFO:   <<< time_embedding: 0
+2024-01-29 17:50:39,882:INFO:   <<< train_csv: data/.train.csv
+2024-01-29 17:50:39,882:INFO:   <<< train_frame_order: 0
+2024-01-29 17:50:39,882:INFO:   <<< use_mil: False
+2024-01-29 17:50:39,882:INFO:   <<< val_csv: data/.val.csv
+2024-01-29 17:50:39,882:INFO:   <<< video_dim: 1024
+2024-01-29 17:50:39,882:INFO:   <<< visual_num_hidden_layers: 12
+2024-01-29 17:50:39,882:INFO:   <<< warmup_proportion: 0.1
+2024-01-29 17:50:39,882:INFO:   <<< world_size: 1
+2024-01-29 17:50:39,882:INFO: device: cuda:0 n_gpu: 1
+2024-01-29 17:50:40,405:INFO: loading archive file /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base
+2024-01-29 17:50:40,405:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-01-29 17:50:40,405:INFO: Weight doesn't exsits. /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base/cross_pytorch_model.bin
+2024-01-29 17:50:40,405:WARNING: Stage-One:True, Stage-Two:False
+2024-01-29 17:50:40,406:WARNING: Test retrieval by loose type.
+2024-01-29 17:50:40,406:WARNING: 	 embed_dim: 512
+2024-01-29 17:50:40,406:WARNING: 	 image_resolution: 224
+2024-01-29 17:50:40,406:WARNING: 	 vision_layers: 12
+2024-01-29 17:50:40,406:WARNING: 	 vision_width: 768
+2024-01-29 17:50:40,406:WARNING: 	 vision_patch_size: 32
+2024-01-29 17:50:40,406:WARNING: 	 context_length: 77
+2024-01-29 17:50:40,406:WARNING: 	 vocab_size: 49408
+2024-01-29 17:50:40,406:WARNING: 	 transformer_width: 512
+2024-01-29 17:50:40,406:WARNING: 	 transformer_heads: 8
+2024-01-29 17:50:40,406:WARNING: 	 transformer_layers: 12
+2024-01-29 17:50:40,406:WARNING: 		 linear_patch: 2d
+2024-01-29 17:50:40,406:WARNING: 	 cut_top_layer: 0
+2024-01-29 17:50:41,461:WARNING: 	 sim_header: meanP
+2024-01-29 17:50:44,063:INFO: --------------------
+2024-01-29 17:50:44,063:INFO: Weights from pretrained model not used in MeRetriever: 
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-01-29 17:50:45,672:INFO: ***** Running test *****
+2024-01-29 17:50:45,672:INFO:   Num examples = 1334
+2024-01-29 17:50:45,672:INFO:   Batch size = 16
+2024-01-29 17:50:45,672:INFO:   Num steps = 11
+2024-01-29 17:50:45,672:INFO: ***** Running val *****
+2024-01-29 17:50:45,673:INFO:   Num examples = 1334
+2024-01-29 17:50:45,674:INFO: model evaluation on 1 GPU
+2024-01-29 17:53:10,949:INFO: Effective parameters:
+2024-01-29 17:53:10,949:INFO:   <<< adaptive_cls: 0
+2024-01-29 17:53:10,949:INFO:   <<< aggregation: None
+2024-01-29 17:53:10,949:INFO:   <<< alpha: 1.0
+2024-01-29 17:53:10,949:INFO:   <<< batch_size: 64
+2024-01-29 17:53:10,949:INFO:   <<< batch_size_val: 16
+2024-01-29 17:53:10,949:INFO:   <<< cache_dir: 
+2024-01-29 17:53:10,949:INFO:   <<< cluser_embed_from_clip: 1
+2024-01-29 17:53:10,949:INFO:   <<< cluster_algo: kmediods++
+2024-01-29 17:53:10,949:INFO:   <<< cluster_distance: euclidean
+2024-01-29 17:53:10,949:INFO:   <<< cluster_embedding: 0
+2024-01-29 17:53:10,949:INFO:   <<< cluster_frame_embedding: 0
+2024-01-29 17:53:10,949:INFO:   <<< cluster_iter_limit: 100
+2024-01-29 17:53:10,949:INFO:   <<< cluster_threshold: 1e-05
+2024-01-29 17:53:10,949:INFO:   <<< coef_lr: 0.001
+2024-01-29 17:53:10,949:INFO:   <<< cross_model: cross-base
+2024-01-29 17:53:10,949:INFO:   <<< cross_num_hidden_layers: 4
+2024-01-29 17:53:10,950:INFO:   <<< data_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades
+2024-01-29 17:53:10,950:INFO:   <<< datatype: charades
+2024-01-29 17:53:10,950:INFO:   <<< do_eval: True
+2024-01-29 17:53:10,950:INFO:   <<< do_lower_case: False
+2024-01-29 17:53:10,950:INFO:   <<< do_pretrain: False
+2024-01-29 17:53:10,950:INFO:   <<< do_train: False
+2024-01-29 17:53:10,950:INFO:   <<< dynamic_alpha: False
+2024-01-29 17:53:10,950:INFO:   <<< epochs: 20
+2024-01-29 17:53:10,950:INFO:   <<< eval_frame_order: 0
+2024-01-29 17:53:10,950:INFO:   <<< expand_msrvtt_sentences: False
+2024-01-29 17:53:10,950:INFO:   <<< feature_framerate: 1
+2024-01-29 17:53:10,950:INFO:   <<< features_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades/Charades_v1_cp/
+2024-01-29 17:53:10,950:INFO:   <<< fp16: False
+2024-01-29 17:53:10,950:INFO:   <<< fp16_opt_level: O1
+2024-01-29 17:53:10,950:INFO:   <<< freeze_layer_num: 0
+2024-01-29 17:53:10,950:INFO:   <<< gradient_accumulation_steps: 1
+2024-01-29 17:53:10,950:INFO:   <<< hard_negative_rate: 0.5
+2024-01-29 17:53:10,950:INFO:   <<< init_model: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/checkpoints/pytorch_model.bin.4
+2024-01-29 17:53:10,950:INFO:   <<< linear_patch: 2d
+2024-01-29 17:53:10,950:INFO:   <<< local_rank: 0
+2024-01-29 17:53:10,950:INFO:   <<< loose_type: True
+2024-01-29 17:53:10,950:INFO:   <<< loss: balanced
+2024-01-29 17:53:10,950:INFO:   <<< lr: 0.0001
+2024-01-29 17:53:10,950:INFO:   <<< lr_decay: 0.9
+2024-01-29 17:53:10,950:INFO:   <<< margin: 0.1
+2024-01-29 17:53:10,950:INFO:   <<< max_frames: 64
+2024-01-29 17:53:10,950:INFO:   <<< max_words: 77
+2024-01-29 17:53:10,950:INFO:   <<< minkowski_norm_p: 2.0
+2024-01-29 17:53:10,950:INFO:   <<< n_display: 100
+2024-01-29 17:53:10,950:INFO:   <<< n_gpu: 1
+2024-01-29 17:53:10,950:INFO:   <<< n_pair: 1
+2024-01-29 17:53:10,950:INFO:   <<< negative_weighting: 1
+2024-01-29 17:53:10,950:INFO:   <<< num_thread_reader: 8
+2024-01-29 17:53:10,950:INFO:   <<< output_dir: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/outputs/testbase0129/
+2024-01-29 17:53:10,950:INFO:   <<< post_cluster_centroids: 16
+2024-01-29 17:53:10,950:INFO:   <<< post_process: cluster
+2024-01-29 17:53:10,950:INFO:   <<< pre_norm: 0
+2024-01-29 17:53:10,951:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-01-29 17:53:10,951:INFO:   <<< rank: 0
+2024-01-29 17:53:10,951:INFO:   <<< resume_model: None
+2024-01-29 17:53:10,951:INFO:   <<< sampled_use_mil: False
+2024-01-29 17:53:10,951:INFO:   <<< save_feature_path: None
+2024-01-29 17:53:10,951:INFO:   <<< seed: 42
+2024-01-29 17:53:10,951:INFO:   <<< sim_header: meanP
+2024-01-29 17:53:10,951:INFO:   <<< sim_lambda: 0.0
+2024-01-29 17:53:10,951:INFO:   <<< slice_framepos: 2
+2024-01-29 17:53:10,951:INFO:   <<< task_type: retrieval
+2024-01-29 17:53:10,951:INFO:   <<< temperature_new: 1.0
+2024-01-29 17:53:10,951:INFO:   <<< text_num_hidden_layers: 12
+2024-01-29 17:53:10,951:INFO:   <<< time_embedding: 0
+2024-01-29 17:53:10,951:INFO:   <<< train_csv: data/.train.csv
+2024-01-29 17:53:10,951:INFO:   <<< train_frame_order: 0
+2024-01-29 17:53:10,951:INFO:   <<< use_mil: False
+2024-01-29 17:53:10,951:INFO:   <<< val_csv: data/.val.csv
+2024-01-29 17:53:10,951:INFO:   <<< video_dim: 1024
+2024-01-29 17:53:10,951:INFO:   <<< visual_num_hidden_layers: 12
+2024-01-29 17:53:10,951:INFO:   <<< warmup_proportion: 0.1
+2024-01-29 17:53:10,951:INFO:   <<< world_size: 1
+2024-01-29 17:53:10,951:INFO: device: cuda:0 n_gpu: 1
+2024-01-29 17:53:12,628:INFO: loading archive file /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base
+2024-01-29 17:53:12,629:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-01-29 17:53:12,629:INFO: Weight doesn't exsits. /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base/cross_pytorch_model.bin
+2024-01-29 17:53:12,629:WARNING: Stage-One:True, Stage-Two:False
+2024-01-29 17:53:12,629:WARNING: Test retrieval by loose type.
+2024-01-29 17:53:12,629:WARNING: 	 embed_dim: 512
+2024-01-29 17:53:12,629:WARNING: 	 image_resolution: 224
+2024-01-29 17:53:12,629:WARNING: 	 vision_layers: 12
+2024-01-29 17:53:12,629:WARNING: 	 vision_width: 768
+2024-01-29 17:53:12,630:WARNING: 	 vision_patch_size: 32
+2024-01-29 17:53:12,630:WARNING: 	 context_length: 77
+2024-01-29 17:53:12,630:WARNING: 	 vocab_size: 49408
+2024-01-29 17:53:12,630:WARNING: 	 transformer_width: 512
+2024-01-29 17:53:12,630:WARNING: 	 transformer_heads: 8
+2024-01-29 17:53:12,630:WARNING: 	 transformer_layers: 12
+2024-01-29 17:53:12,630:WARNING: 		 linear_patch: 2d
+2024-01-29 17:53:12,630:WARNING: 	 cut_top_layer: 0
+2024-01-29 17:53:13,718:WARNING: 	 sim_header: meanP
+2024-01-29 17:53:16,337:INFO: --------------------
+2024-01-29 17:53:16,337:INFO: Weights from pretrained model not used in MeRetriever: 
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-01-29 17:53:18,733:INFO: ***** Running test *****
+2024-01-29 17:53:18,733:INFO:   Num examples = 1334
+2024-01-29 17:53:18,733:INFO:   Batch size = 16
+2024-01-29 17:53:18,733:INFO:   Num steps = 21
+2024-01-29 17:53:18,733:INFO: ***** Running val *****
+2024-01-29 17:53:18,733:INFO:   Num examples = 1334
+2024-01-29 17:53:18,735:INFO: model evaluation on 1 GPU
+2024-01-29 17:55:10,574:INFO: Effective parameters:
+2024-01-29 17:55:10,574:INFO:   <<< adaptive_cls: 0
+2024-01-29 17:55:10,574:INFO:   <<< aggregation: None
+2024-01-29 17:55:10,574:INFO:   <<< alpha: 1.0
+2024-01-29 17:55:10,574:INFO:   <<< batch_size: 32
+2024-01-29 17:55:10,574:INFO:   <<< batch_size_val: 16
+2024-01-29 17:55:10,574:INFO:   <<< cache_dir: 
+2024-01-29 17:55:10,574:INFO:   <<< cluser_embed_from_clip: 1
+2024-01-29 17:55:10,575:INFO:   <<< cluster_algo: kmediods++
+2024-01-29 17:55:10,575:INFO:   <<< cluster_distance: euclidean
+2024-01-29 17:55:10,575:INFO:   <<< cluster_embedding: 0
+2024-01-29 17:55:10,575:INFO:   <<< cluster_frame_embedding: 0
+2024-01-29 17:55:10,575:INFO:   <<< cluster_iter_limit: 100
+2024-01-29 17:55:10,575:INFO:   <<< cluster_threshold: 1e-05
+2024-01-29 17:55:10,575:INFO:   <<< coef_lr: 0.001
+2024-01-29 17:55:10,575:INFO:   <<< cross_model: cross-base
+2024-01-29 17:55:10,575:INFO:   <<< cross_num_hidden_layers: 4
+2024-01-29 17:55:10,575:INFO:   <<< data_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades
+2024-01-29 17:55:10,575:INFO:   <<< datatype: charades
+2024-01-29 17:55:10,575:INFO:   <<< do_eval: True
+2024-01-29 17:55:10,575:INFO:   <<< do_lower_case: False
+2024-01-29 17:55:10,575:INFO:   <<< do_pretrain: False
+2024-01-29 17:55:10,575:INFO:   <<< do_train: False
+2024-01-29 17:55:10,575:INFO:   <<< dynamic_alpha: False
+2024-01-29 17:55:10,575:INFO:   <<< epochs: 20
+2024-01-29 17:55:10,575:INFO:   <<< eval_frame_order: 0
+2024-01-29 17:55:10,575:INFO:   <<< expand_msrvtt_sentences: False
+2024-01-29 17:55:10,575:INFO:   <<< feature_framerate: 1
+2024-01-29 17:55:10,575:INFO:   <<< features_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades/Charades_v1_cp/
+2024-01-29 17:55:10,575:INFO:   <<< fp16: False
+2024-01-29 17:55:10,575:INFO:   <<< fp16_opt_level: O1
+2024-01-29 17:55:10,575:INFO:   <<< freeze_layer_num: 0
+2024-01-29 17:55:10,575:INFO:   <<< gradient_accumulation_steps: 1
+2024-01-29 17:55:10,575:INFO:   <<< hard_negative_rate: 0.5
+2024-01-29 17:55:10,575:INFO:   <<< init_model: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/checkpoints/pytorch_model.bin.4
+2024-01-29 17:55:10,575:INFO:   <<< linear_patch: 2d
+2024-01-29 17:55:10,575:INFO:   <<< local_rank: 0
+2024-01-29 17:55:10,575:INFO:   <<< loose_type: True
+2024-01-29 17:55:10,575:INFO:   <<< loss: balanced
+2024-01-29 17:55:10,575:INFO:   <<< lr: 0.0001
+2024-01-29 17:55:10,575:INFO:   <<< lr_decay: 0.9
+2024-01-29 17:55:10,575:INFO:   <<< margin: 0.1
+2024-01-29 17:55:10,575:INFO:   <<< max_frames: 64
+2024-01-29 17:55:10,575:INFO:   <<< max_words: 77
+2024-01-29 17:55:10,575:INFO:   <<< minkowski_norm_p: 2.0
+2024-01-29 17:55:10,576:INFO:   <<< n_display: 100
+2024-01-29 17:55:10,576:INFO:   <<< n_gpu: 1
+2024-01-29 17:55:10,576:INFO:   <<< n_pair: 1
+2024-01-29 17:55:10,576:INFO:   <<< negative_weighting: 1
+2024-01-29 17:55:10,576:INFO:   <<< num_thread_reader: 8
+2024-01-29 17:55:10,576:INFO:   <<< output_dir: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/outputs/testbase0129/
+2024-01-29 17:55:10,576:INFO:   <<< post_cluster_centroids: 16
+2024-01-29 17:55:10,576:INFO:   <<< post_process: cluster
+2024-01-29 17:55:10,576:INFO:   <<< pre_norm: 0
+2024-01-29 17:55:10,576:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-01-29 17:55:10,576:INFO:   <<< rank: 0
+2024-01-29 17:55:10,576:INFO:   <<< resume_model: None
+2024-01-29 17:55:10,576:INFO:   <<< sampled_use_mil: False
+2024-01-29 17:55:10,576:INFO:   <<< save_feature_path: None
+2024-01-29 17:55:10,576:INFO:   <<< seed: 42
+2024-01-29 17:55:10,576:INFO:   <<< sim_header: meanP
+2024-01-29 17:55:10,576:INFO:   <<< sim_lambda: 0.0
+2024-01-29 17:55:10,576:INFO:   <<< slice_framepos: 2
+2024-01-29 17:55:10,576:INFO:   <<< task_type: retrieval
+2024-01-29 17:55:10,576:INFO:   <<< temperature_new: 1.0
+2024-01-29 17:55:10,576:INFO:   <<< text_num_hidden_layers: 12
+2024-01-29 17:55:10,576:INFO:   <<< time_embedding: 0
+2024-01-29 17:55:10,576:INFO:   <<< train_csv: data/.train.csv
+2024-01-29 17:55:10,576:INFO:   <<< train_frame_order: 0
+2024-01-29 17:55:10,576:INFO:   <<< use_mil: False
+2024-01-29 17:55:10,576:INFO:   <<< val_csv: data/.val.csv
+2024-01-29 17:55:10,576:INFO:   <<< video_dim: 1024
+2024-01-29 17:55:10,576:INFO:   <<< visual_num_hidden_layers: 12
+2024-01-29 17:55:10,576:INFO:   <<< warmup_proportion: 0.1
+2024-01-29 17:55:10,576:INFO:   <<< world_size: 1
+2024-01-29 17:55:10,577:INFO: device: cuda:0 n_gpu: 1
+2024-01-29 17:55:12,241:INFO: loading archive file /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base
+2024-01-29 17:55:12,242:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-01-29 17:55:12,242:INFO: Weight doesn't exsits. /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base/cross_pytorch_model.bin
+2024-01-29 17:55:12,242:WARNING: Stage-One:True, Stage-Two:False
+2024-01-29 17:55:12,242:WARNING: Test retrieval by loose type.
+2024-01-29 17:55:12,242:WARNING: 	 embed_dim: 512
+2024-01-29 17:55:12,242:WARNING: 	 image_resolution: 224
+2024-01-29 17:55:12,242:WARNING: 	 vision_layers: 12
+2024-01-29 17:55:12,242:WARNING: 	 vision_width: 768
+2024-01-29 17:55:12,242:WARNING: 	 vision_patch_size: 32
+2024-01-29 17:55:12,242:WARNING: 	 context_length: 77
+2024-01-29 17:55:12,242:WARNING: 	 vocab_size: 49408
+2024-01-29 17:55:12,242:WARNING: 	 transformer_width: 512
+2024-01-29 17:55:12,242:WARNING: 	 transformer_heads: 8
+2024-01-29 17:55:12,242:WARNING: 	 transformer_layers: 12
+2024-01-29 17:55:12,242:WARNING: 		 linear_patch: 2d
+2024-01-29 17:55:12,242:WARNING: 	 cut_top_layer: 0
+2024-01-29 17:55:13,321:WARNING: 	 sim_header: meanP
+2024-01-29 17:55:15,917:INFO: --------------------
+2024-01-29 17:55:15,918:INFO: Weights from pretrained model not used in MeRetriever: 
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-01-29 17:55:18,267:INFO: ***** Running test *****
+2024-01-29 17:55:18,268:INFO:   Num examples = 1334
+2024-01-29 17:55:18,268:INFO:   Batch size = 16
+2024-01-29 17:55:18,268:INFO:   Num steps = 42
+2024-01-29 17:55:18,268:INFO: ***** Running val *****
+2024-01-29 17:55:18,268:INFO:   Num examples = 1334
+2024-01-29 17:55:18,270:INFO: model evaluation on 1 GPU
+2024-01-29 17:56:04,278:INFO: Effective parameters:
+2024-01-29 17:56:04,278:INFO:   <<< adaptive_cls: 0
+2024-01-29 17:56:04,278:INFO:   <<< aggregation: None
+2024-01-29 17:56:04,278:INFO:   <<< alpha: 1.0
+2024-01-29 17:56:04,278:INFO:   <<< batch_size: 32
+2024-01-29 17:56:04,278:INFO:   <<< batch_size_val: 16
+2024-01-29 17:56:04,278:INFO:   <<< cache_dir: 
+2024-01-29 17:56:04,278:INFO:   <<< cluser_embed_from_clip: 1
+2024-01-29 17:56:04,278:INFO:   <<< cluster_algo: kmediods++
+2024-01-29 17:56:04,278:INFO:   <<< cluster_distance: euclidean
+2024-01-29 17:56:04,278:INFO:   <<< cluster_embedding: 0
+2024-01-29 17:56:04,278:INFO:   <<< cluster_frame_embedding: 0
+2024-01-29 17:56:04,278:INFO:   <<< cluster_iter_limit: 100
+2024-01-29 17:56:04,278:INFO:   <<< cluster_threshold: 1e-05
+2024-01-29 17:56:04,279:INFO:   <<< coef_lr: 0.001
+2024-01-29 17:56:04,279:INFO:   <<< cross_model: cross-base
+2024-01-29 17:56:04,279:INFO:   <<< cross_num_hidden_layers: 4
+2024-01-29 17:56:04,279:INFO:   <<< data_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades
+2024-01-29 17:56:04,279:INFO:   <<< datatype: charades
+2024-01-29 17:56:04,279:INFO:   <<< do_eval: True
+2024-01-29 17:56:04,279:INFO:   <<< do_lower_case: False
+2024-01-29 17:56:04,279:INFO:   <<< do_pretrain: False
+2024-01-29 17:56:04,279:INFO:   <<< do_train: False
+2024-01-29 17:56:04,279:INFO:   <<< dynamic_alpha: False
+2024-01-29 17:56:04,279:INFO:   <<< epochs: 20
+2024-01-29 17:56:04,279:INFO:   <<< eval_frame_order: 0
+2024-01-29 17:56:04,279:INFO:   <<< expand_msrvtt_sentences: False
+2024-01-29 17:56:04,279:INFO:   <<< feature_framerate: 1
+2024-01-29 17:56:04,279:INFO:   <<< features_path: /home/zhengwei/Desktop/Zhengwei/Projects/datasets/Charades/Charades_v1_cp/
+2024-01-29 17:56:04,279:INFO:   <<< fp16: False
+2024-01-29 17:56:04,279:INFO:   <<< fp16_opt_level: O1
+2024-01-29 17:56:04,279:INFO:   <<< freeze_layer_num: 0
+2024-01-29 17:56:04,279:INFO:   <<< gradient_accumulation_steps: 1
+2024-01-29 17:56:04,279:INFO:   <<< hard_negative_rate: 0.5
+2024-01-29 17:56:04,279:INFO:   <<< init_model: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/checkpoints/pytorch_model.bin.4
+2024-01-29 17:56:04,279:INFO:   <<< linear_patch: 2d
+2024-01-29 17:56:04,279:INFO:   <<< local_rank: 0
+2024-01-29 17:56:04,279:INFO:   <<< loose_type: True
+2024-01-29 17:56:04,279:INFO:   <<< loss: balanced
+2024-01-29 17:56:04,279:INFO:   <<< lr: 0.0001
+2024-01-29 17:56:04,279:INFO:   <<< lr_decay: 0.9
+2024-01-29 17:56:04,279:INFO:   <<< margin: 0.1
+2024-01-29 17:56:04,279:INFO:   <<< max_frames: 64
+2024-01-29 17:56:04,279:INFO:   <<< max_words: 77
+2024-01-29 17:56:04,279:INFO:   <<< minkowski_norm_p: 2.0
+2024-01-29 17:56:04,279:INFO:   <<< n_display: 100
+2024-01-29 17:56:04,279:INFO:   <<< n_gpu: 1
+2024-01-29 17:56:04,279:INFO:   <<< n_pair: 1
+2024-01-29 17:56:04,279:INFO:   <<< negative_weighting: 1
+2024-01-29 17:56:04,279:INFO:   <<< num_thread_reader: 4
+2024-01-29 17:56:04,279:INFO:   <<< output_dir: /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/outputs/testbase0129/
+2024-01-29 17:56:04,280:INFO:   <<< post_cluster_centroids: 16
+2024-01-29 17:56:04,280:INFO:   <<< post_process: cluster
+2024-01-29 17:56:04,280:INFO:   <<< pre_norm: 0
+2024-01-29 17:56:04,280:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-01-29 17:56:04,280:INFO:   <<< rank: 0
+2024-01-29 17:56:04,280:INFO:   <<< resume_model: None
+2024-01-29 17:56:04,280:INFO:   <<< sampled_use_mil: False
+2024-01-29 17:56:04,280:INFO:   <<< save_feature_path: None
+2024-01-29 17:56:04,280:INFO:   <<< seed: 42
+2024-01-29 17:56:04,280:INFO:   <<< sim_header: meanP
+2024-01-29 17:56:04,280:INFO:   <<< sim_lambda: 0.0
+2024-01-29 17:56:04,280:INFO:   <<< slice_framepos: 2
+2024-01-29 17:56:04,280:INFO:   <<< task_type: retrieval
+2024-01-29 17:56:04,280:INFO:   <<< temperature_new: 1.0
+2024-01-29 17:56:04,280:INFO:   <<< text_num_hidden_layers: 12
+2024-01-29 17:56:04,280:INFO:   <<< time_embedding: 0
+2024-01-29 17:56:04,280:INFO:   <<< train_csv: data/.train.csv
+2024-01-29 17:56:04,280:INFO:   <<< train_frame_order: 0
+2024-01-29 17:56:04,280:INFO:   <<< use_mil: False
+2024-01-29 17:56:04,280:INFO:   <<< val_csv: data/.val.csv
+2024-01-29 17:56:04,280:INFO:   <<< video_dim: 1024
+2024-01-29 17:56:04,280:INFO:   <<< visual_num_hidden_layers: 12
+2024-01-29 17:56:04,280:INFO:   <<< warmup_proportion: 0.1
+2024-01-29 17:56:04,280:INFO:   <<< world_size: 1
+2024-01-29 17:56:04,280:INFO: device: cuda:0 n_gpu: 1
+2024-01-29 17:56:04,816:INFO: loading archive file /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base
+2024-01-29 17:56:04,816:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-01-29 17:56:04,817:INFO: Weight doesn't exsits. /home/zhengwei/Desktop/Zhengwei/Projects/MEV2T/modules/cross-base/cross_pytorch_model.bin
+2024-01-29 17:56:04,817:WARNING: Stage-One:True, Stage-Two:False
+2024-01-29 17:56:04,817:WARNING: Test retrieval by loose type.
+2024-01-29 17:56:04,817:WARNING: 	 embed_dim: 512
+2024-01-29 17:56:04,817:WARNING: 	 image_resolution: 224
+2024-01-29 17:56:04,817:WARNING: 	 vision_layers: 12
+2024-01-29 17:56:04,817:WARNING: 	 vision_width: 768
+2024-01-29 17:56:04,817:WARNING: 	 vision_patch_size: 32
+2024-01-29 17:56:04,817:WARNING: 	 context_length: 77
+2024-01-29 17:56:04,817:WARNING: 	 vocab_size: 49408
+2024-01-29 17:56:04,817:WARNING: 	 transformer_width: 512
+2024-01-29 17:56:04,817:WARNING: 	 transformer_heads: 8
+2024-01-29 17:56:04,817:WARNING: 	 transformer_layers: 12
+2024-01-29 17:56:04,817:WARNING: 		 linear_patch: 2d
+2024-01-29 17:56:04,817:WARNING: 	 cut_top_layer: 0
+2024-01-29 17:56:05,845:WARNING: 	 sim_header: meanP
+2024-01-29 17:56:08,398:INFO: --------------------
+2024-01-29 17:56:08,398:INFO: Weights from pretrained model not used in MeRetriever: 
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-01-29 17:56:09,950:INFO: ***** Running test *****
+2024-01-29 17:56:09,950:INFO:   Num examples = 1334
+2024-01-29 17:56:09,950:INFO:   Batch size = 16
+2024-01-29 17:56:09,950:INFO:   Num steps = 42
+2024-01-29 17:56:09,950:INFO: ***** Running val *****
+2024-01-29 17:56:09,950:INFO:   Num examples = 1334
+2024-01-29 17:56:09,952:INFO: model evaluation on 1 GPU
+2024-01-29 17:59:20,113:INFO: sim matrix size: 3720, 1334
+2024-01-29 17:59:21,777:INFO: Text to video:
+2024-01-29 17:59:21,777:INFO: mean_mean: 361.03387096774196
+2024-01-29 17:59:21,777:INFO: mean_median: 361.03387096774196
+2024-01-29 17:59:21,778:INFO: median_mean: 244.0
+2024-01-29 17:59:21,778:INFO: median_median: 244.0
+2024-01-29 17:59:21,778:INFO: hit_ratio_1: 0.00967741935483871
+2024-01-29 17:59:21,778:INFO: best_1: 0.00967741935483871
+2024-01-29 17:59:21,778:INFO: worst_1: 0.00967741935483871
+2024-01-29 17:59:21,778:INFO: hit_ratio_5: 0.03575268817204301
+2024-01-29 17:59:21,778:INFO: best_5: 0.03575268817204301
+2024-01-29 17:59:21,778:INFO: worst_5: 0.03575268817204301
+2024-01-29 17:59:21,778:INFO: hit_ratio_10: 0.06693548387096775
+2024-01-29 17:59:21,778:INFO: best_10: 0.06693548387096775
+2024-01-29 17:59:21,778:INFO: worst_10: 0.06693548387096775
+2024-01-29 17:59:21,778:INFO: hit_ratio_50: 0.1989247311827957
+2024-01-29 17:59:21,778:INFO: best_50: 0.1989247311827957
+2024-01-29 17:59:21,778:INFO: worst_50: 0.1989247311827957
+2024-01-29 17:59:21,778:INFO: hit_ratio_100: 0.30806451612903224
+2024-01-29 17:59:21,778:INFO: best_100: 0.30806451612903224
+2024-01-29 17:59:21,778:INFO: worst_100: 0.30806451612903224
+2024-01-29 17:59:21,778:INFO: Video to text:
+2024-01-29 17:59:21,778:INFO: mean_mean: 1061.7193233740272
+2024-01-29 17:59:21,778:INFO: mean_median: 1023.7293853073463
+2024-01-29 17:59:21,778:INFO: median_mean: 895.8809523809524
+2024-01-29 17:59:21,778:INFO: median_median: 801.75
+2024-01-29 17:59:21,778:INFO: hit_ratio_1: 0.00789158991932605
+2024-01-29 17:59:21,779:INFO: best_1: 0.017991004497751123
+2024-01-29 17:59:21,779:INFO: worst_1: 0.0029985007496251873
+2024-01-29 17:59:21,779:INFO: hit_ratio_5: 0.02901079222293615
+2024-01-29 17:59:21,779:INFO: best_5: 0.060719640179910044
+2024-01-29 17:59:21,779:INFO: worst_5: 0.01424287856071964
+2024-01-29 17:59:21,779:INFO: hit_ratio_10: 0.0412823350229647
+2024-01-29 17:59:21,779:INFO: best_10: 0.08845577211394302
+2024-01-29 17:59:21,779:INFO: worst_10: 0.017241379310344827
+2024-01-29 17:59:21,779:INFO: hit_ratio_50: 0.10810398372242451
+2024-01-29 17:59:21,779:INFO: best_50: 0.22263868065967016
+2024-01-29 17:59:21,779:INFO: worst_50: 0.044977511244377814
+2024-01-29 17:59:21,779:INFO: hit_ratio_100: 0.16872873087265888
+2024-01-29 17:59:21,779:INFO: best_100: 0.31334332833583206
+2024-01-29 17:59:21,779:INFO: worst_100: 0.07571214392803598

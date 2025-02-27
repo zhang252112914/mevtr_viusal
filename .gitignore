@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+checkpoints/pytorch_model.bin.4
+modules/ViT-B-16.pt
+modules/ViT-B-32.pt
